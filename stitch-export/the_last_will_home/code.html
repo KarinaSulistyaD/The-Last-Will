@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&amp;family=Outfit:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"tertiary":"#0f2600","surface-container-high":"#ebe8df","background":"#fcf9f0","on-tertiary":"#ffffff","on-error":"#ffffff","on-primary-fixed":"#002021","primary":"#002527","primary-fixed-dim":"#a8cdcf","outline":"#717879","on-tertiary-fixed-variant":"#344e1e","on-background":"#1c1c17","on-secondary":"#ffffff","secondary":"#954830","surface":"#fcf9f0","on-surface":"#1c1c17","on-primary-container":"#81a5a7","on-error-container":"#93000a","on-secondary-container":"#78321c","secondary-fixed-dim":"#ffb59f","inverse-on-surface":"#f4f1e8","secondary-container":"#ff9c7f","tertiary-fixed-dim":"#b0d093","surface-container-highest":"#e5e2da","surface-container-lowest":"#ffffff","outline-variant":"#c1c8c8","surface-container":"#f1eee5","primary-fixed":"#c4eaec","error":"#ba1a1a","surface-dim":"#dddad1","on-surface-variant":"#414848","inverse-surface":"#31312b","error-container":"#ffdad6","surface-container-low":"#f6f3ea","on-primary-fixed-variant":"#294c4e","inverse-primary":"#a8cdcf","on-secondary-fixed":"#3a0a00","surface-variant":"#e5e2da","on-tertiary-fixed":"#0c2000","tertiary-fixed":"#ccedad","on-primary":"#ffffff","on-secondary-fixed-variant":"#77311b","secondary-fixed":"#ffdbd1","tertiary-container":"#233c0e","primary-container":"#163b3d","surface-bright":"#fcf9f0","surface-tint":"#416466","on-tertiary-container":"#89a86e"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"margin":"3rem","space-lg":"1.5rem","margin-mobile":"1.25rem","gutter-mobile":"1rem","space-sm":"0.5rem","space-xs":"0.25rem","space-xl":"2.5rem","gutter":"1.5rem","space-md":"1rem"},fontFamily:{"headline-lg-mobile":["Newsreader"],"display-lg":["Newsreader"],"headline-lg":["Newsreader"],"body-md":["Outfit"],"body-lg":["Outfit"],"headline-sm":["Newsreader"],"display-lg-mobile":["Newsreader"],"title-lg":["Outfit"],"body-sm":["Outfit"],"title-md":["Outfit"],"label-lg":["Outfit"],"headline-md":["Newsreader"],"label-md":["Outfit"],"label-sm":["Outfit"]},fontSize:{"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"400"}],"display-lg":["56px",{"lineHeight":"64px","letterSpacing":"-0.02em","fontWeight":"400"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.015em","fontWeight":"400"}],"body-md":["15px",{"lineHeight":"24px","letterSpacing":"0","fontWeight":"400"}],"body-lg":["18px",{"lineHeight":"28px","letterSpacing":"0","fontWeight":"400"}],"headline-sm":["22px",{"lineHeight":"30px","letterSpacing":"0","fontWeight":"500"}],"display-lg-mobile":["38px",{"lineHeight":"46px","letterSpacing":"-0.015em","fontWeight":"400"}],"title-lg":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"400"}],"title-md":["17px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-md":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"500"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"500"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.06em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="fixed top-0 inset-x-0 z-50 flex items-center justify-center p-space-md pointer-events-none"><div class="pointer-events-auto h-16 max-w-7xl w-full mx-auto px-space-md flex items-center justify-between rounded-full bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_24px_48px_-12px_rgba(22,59,61,0.12),0_8px_24px_-4px_rgba(22,59,61,0.06)]"><div class="flex items-center gap-space-sm pl-space-xs"><img alt="The Last Will Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrB1DL7LMBYekof98Qgg_bFoiPHll1mLbiElScfJOiJ2iwyIkudrOC4dSKO_IiYW0nepvXWTskSdm5d7jhmXXXSuv_C49nDbDmdaJYBo6Z6qpnSHrzpOoSvPZt6_oIVPzEkz9cgQGkLORxU88iXW-9i3aJjoPnWaEuvEIXYhLzkSldmYlD7eKwK32b7BHdDkWtHb5fcD65tr8TKmbLgvSA-9K-JJF7tE8ZiF7U30Sf0P"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-serif hidden sm:inline-block">The Last Will</span></div><nav class="hidden md:flex items-center gap-space-xs p-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-full"><a aria-current="page" class="px-space-md py-space-xs transition-colors bg-primary-container text-on-primary-container font-semibold rounded-full" data-path="beranda" href="#">Home</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="cara-kerja" href="#cara-kerja">How It Works</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="keamanan" href="#keamanan">Security</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="tentang-kami" href="#tentang">About</a></nav><div class="flex items-center gap-space-sm pr-space-xs"><a class="inline-flex items-center justify-center px-space-lg py-space-xs rounded-full bg-primary font-label-lg text-label-lg text-on-primary hover:bg-primary-container hover:text-on-primary transition-all shadow-[0_2px_8px_-2px_rgba(22,59,61,0.04)]" data-path="masuk" href="#">Sign In</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full font-body-md text-on-surface bg-surface selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- HERO SECTION: CINEMATIC TRAIN-WINDOW COMPOSITION -->
+<section class="relative w-full min-h-[92vh] flex items-center justify-center -mt-16 overflow-hidden">
+<!-- Background Image: Train window vista -->
+<div class="absolute inset-0 w-full h-full bg-cover bg-center transition-transform duration-1000 scale-105" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuARNVD5BK4HWZDHeJnLfXypLhqh1JleqEQ3qS86ovlpUbVqFaFBXMfSRqIsY2saqX4c1RsxhVRaohOZseBx7-IjZJpG8j7ATFg5yJoeFxYs1q_vqDPn8g1APBTA7wNFeANKzBRFkEUL3tfgYNdz02OA7SjaSZLlbehFYUnw1_-V6Aqs1DFrGgcZ9Gy-JlwZo9X5kYh2EG93W6ak1lJ76gppkfbwnxD8toNE3GPD4QJN');">
+</div>
+<!-- Multi-layered Warm Editorial Scrim (Daylight over Vintage Carriage) -->
+<div class="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/55 to-primary/30 mix-blend-multiply"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-primary/40 via-transparent to-primary/80"></div>
+<!-- Soft Radial Daylight Tint from distant window corner -->
+<div class="absolute top-1/4 right-10 w-96 h-96 rounded-full bg-secondary-fixed/20 blur-3xl pointer-events-none"></div>
+<!-- Hero Content Container -->
+<div class="relative z-10 max-w-5xl mx-auto px-margin-mobile md:px-margin text-center flex flex-col items-center pt-28 pb-20">
+<!-- Atmospheric Detail Badge -->
+<div class="inline-flex items-center gap-space-xs px-4 py-1.5 rounded-full bg-surface-container-lowest/20 backdrop-blur-md text-surface-container-lowest text-label-md tracking-wider uppercase mb-space-lg shadow-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed animate-pulse"></span>
+<span>Secure • Encrypted • Meaningful</span>
+</div>
+<!-- Centered Editorial Headline (English) -->
+<h1 class="font-headline-lg text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold text-surface-container-lowest tracking-tight leading-[1.1] max-w-4xl text-balance drop-shadow-md">
+        Some Things Deserve to Last Forever.
+      </h1>
+<!-- Supporting Editorial Text (Natural English) -->
+<p class="mt-space-lg text-surface-container-high/90 font-body-lg text-base sm:text-lg md:text-xl max-w-2xl leading-relaxed text-balance">
+        Preserve your meaningful messages and important documents. Keep what matters safe, and leave something meaningful for the people you love.
+      </p>
+<!-- Dual Action CTAs -->
+<div class="mt-space-xl flex flex-col sm:flex-row items-center justify-center gap-space-md w-full sm:w-auto">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs px-8 py-4 rounded-full bg-secondary text-on-secondary font-label-lg text-base shadow-xl hover:brightness-110 active:scale-95 transition-all" href="#mulai">
+<span class="material-symbols-outlined text-[20px]">lock_clock</span>
+<span>Get Started</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs px-8 py-4 rounded-full bg-surface-container-lowest/15 hover:bg-surface-container-lowest/25 backdrop-blur-lg text-surface-container-lowest font-label-lg text-base shadow-lg transition-all" href="#cara-kerja">
+<span>Discover How It Works</span>
+<span class="material-symbols-outlined text-[20px]">arrow_downward</span>
+</a>
+</div>
+<!-- Trust Ribbon Indicator -->
+<div class="mt-16 flex items-center justify-center gap-6 text-surface-container-high/70 text-body-sm font-light">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm text-tertiary-fixed">verified_user</span> Encrypted Vault</span>
+<span class="hidden sm:inline opacity-40">•</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm text-tertiary-fixed">history_edu</span> Boundless Legacy</span>
+<span class="hidden sm:inline opacity-40">•</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm text-tertiary-fixed">family_restroom</span> Dignified Handover</span>
+</div>
+</div>
+</section>
+<!-- SECTION 2: ABOUT / MENJAGA MAKNA (Intimate & Balanced) -->
+<section class="w-full py-24 md:py-32 bg-surface" id="tentang">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin">
+<!-- Section Label -->
+<div class="max-w-2xl mb-16">
+<span class="inline-block text-secondary font-label-md uppercase tracking-widest mb-space-xs">
+          About The Last Will
+        </span>
+<h2 class="font-headline-lg text-headline-lg text-primary font-semibold leading-tight">
+          Preserving Meaning Beyond Time
+        </h2>
+<p class="mt-space-md text-on-surface-variant font-body-lg text-body-lg leading-relaxed">
+          A digital inheritance platform thoughtfully designed to help you prepare, protect, and pass down personal messages and invaluable documents to your designated heirs with utmost dignity.
+        </p>
+</div>
+<!-- Balanced 2-Column Showcase -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Left: Keepsake Box Image & Captioned Artifact Frame -->
+<div class="lg:col-span-6 relative">
+<div class="relative rounded-2xl overflow-hidden shadow-2xl bg-surface-container-high">
+<img alt="Heirloom wooden keepsake box and wax-sealed letter on a warm sunlit wooden table" class="w-full h-auto object-cover transform hover:scale-[1.02] transition-transform duration-700 aspect-[4/3]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaV78wthzGuC-WVCbn2jpsk46jhl7aUiSyK4Siz9XUlWWooHVMCcft8B7a5aLON-sQb3s2H6Am8gOV88Re9UtFuz9l9Rm2_gjOtc89w6Jk2dzdt1xt4E1qidsVWQq4rn--QrjVXOgucHgl1rraCjj4-we7aaMsddA88Y2oZjkz8R6-5rDJ6GGYJlWiFAN7HDXD7ioQfrdT4-h7FR9kIcULPkQf1tLEcZhSq8FyemoG"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<!-- Floating Wax-Seal Badge -->
+<div class="absolute top-4 right-4 bg-surface-container-lowest/90 backdrop-blur-md px-3.5 py-1.5 rounded-full flex items-center gap-2 shadow-md">
+<span class="material-symbols-outlined text-secondary text-sm">verified</span>
+<span class="font-label-sm text-primary tracking-wide">Sealed Authentic Archive</span>
+</div>
+<div class="absolute bottom-6 inset-x-6">
+<p class="font-headline-sm text-surface-container-lowest italic text-base sm:text-lg leading-snug">
+                “Every memory and valuable message preserved in a safe digital vault.”
+              </p>
+</div>
+</div>
+<!-- Ambient soft underlay glow -->
+<div class="absolute -bottom-8 -left-8 w-64 h-64 bg-secondary-container/30 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+</div>
+<!-- Right: 3 Narrative Points of Digital Legacy -->
+<div class="lg:col-span-6 flex flex-col gap-space-lg">
+<!-- Narrative Item 1 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-sm hover:shadow-md transition-all">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-2xl">favorite</span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg text-primary font-semibold">
+                  Irreplaceable Personal Messages
+                </h3>
+<p class="mt-space-xs text-on-surface-variant font-body-md text-body-md leading-relaxed">
+                  Express unspoken love through confidential letters, voice recordings filled with warmth, personal video messages, and timely delivery.
+                </p>
+</div>
+</div>
+</div>
+<!-- Narrative Item 2 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-sm hover:shadow-md transition-all">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-2xl">folder_managed</span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg text-primary font-semibold">
+                  Vital Documents &amp; Digital Assets
+                </h3>
+<p class="mt-space-xs text-on-surface-variant font-body-md text-body-md leading-relaxed">
+                  Organize certificates, insurance policies, securities, account guidelines, and asset portfolios cleanly and encrypted, free from worry of loss.
+                </p>
+</div>
+</div>
+</div>
+<!-- Narrative Item 3 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-sm hover:shadow-md transition-all">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-full bg-tertiary-container/15 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-tertiary-container text-2xl">spa</span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg text-primary font-semibold">
+                  Peace of Mind for Tomorrow
+                </h3>
+<p class="mt-space-xs text-on-surface-variant font-body-md text-body-md leading-relaxed">
+                  Eliminate anxiety over the unknown. Provide certainty and calm guidance for your cherished family whenever destiny calls.
+                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: HOW IT WORKS (Three Steps to Safeguard Your Legacy) -->
+<section class="w-full py-24 bg-surface-container-low" id="cara-kerja">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin">
+<!-- Section Header -->
+<div class="text-center max-w-3xl mx-auto mb-20">
+<span class="text-secondary font-label-md uppercase tracking-widest block mb-space-xs">
+          Simple &amp; Meaningful
+        </span>
+<h2 class="font-headline-lg text-headline-lg text-primary font-semibold">
+          Three Steps to Safeguard Your Legacy
+        </h2>
+<p class="mt-space-sm text-on-surface-variant font-body-md">
+          A process designed to be simple, calming, and ensuring absolute privacy from inception to handover.
+        </p>
+</div>
+<!-- 3 Steps Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg relative">
+<!-- Step 1 -->
+<div class="relative bg-surface-container-lowest p-8 rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-8">
+<span class="text-4xl font-headline-md font-bold text-secondary/30 group-hover:text-secondary transition-colors">01</span>
+<div class="w-12 h-12 rounded-full bg-secondary-fixed/50 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-2xl">edit_note</span>
+</div>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary font-semibold">
+              Prepare Your Legacy
+            </h3>
+<p class="font-label-sm text-secondary uppercase tracking-wider mt-1 mb-4">
+              Prepare Your Legacy
+            </p>
+<p class="text-on-surface-variant font-body-md leading-relaxed">
+              Compose heartfelt personal messages and securely upload your vital documents into your digital vault.
+            </p>
+</div>
+<div class="mt-8 pt-4 flex items-center gap-2 text-label-sm text-outline">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Letters, Video, Legal Documents</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative bg-surface-container-lowest p-8 rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-8">
+<span class="text-4xl font-headline-md font-bold text-primary/30 group-hover:text-primary transition-colors">02</span>
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-2xl">enhanced_encryption</span>
+</div>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary font-semibold">
+              Protect with Cryptography
+            </h3>
+<p class="font-label-sm text-primary uppercase tracking-wider mt-1 mb-4">
+              Protect Your Legacy
+            </p>
+<p class="text-on-surface-variant font-body-md leading-relaxed">
+              Your data is fortified with military-grade encryption and steganography-based hidden access keys.
+            </p>
+</div>
+<div class="mt-8 pt-4 flex items-center gap-2 text-label-sm text-outline">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span>Layered Encryption &amp; Steganography</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative bg-surface-container-lowest p-8 rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-8">
+<span class="text-4xl font-headline-md font-bold text-tertiary-container/30 group-hover:text-tertiary-container transition-colors">03</span>
+<div class="w-12 h-12 rounded-full bg-tertiary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary-container text-2xl">mark_email_read</span>
+</div>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary font-semibold">
+              Pass It Forward
+            </h3>
+<p class="font-label-sm text-tertiary-container uppercase tracking-wider mt-1 mb-4">
+              Pass It Forward
+            </p>
+<p class="text-on-surface-variant font-body-md leading-relaxed">
+              Your designated heirs receive exclusive access only after strict identity and protocol verification.
+            </p>
+</div>
+<div class="mt-8 pt-4 flex items-center gap-2 text-label-sm text-outline">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span>
+<span>Verified Release &amp; Solemn Handover</span>
+</div>
+</div>
+</div>
+<!-- Trust Assurance Box -->
+<div class="mt-16 p-6 rounded-2xl bg-surface-container flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">key</span>
+<div>
+<h4 class="font-title-md text-primary">You Always Maintain Full Control</h4>
+<p class="text-body-sm text-on-surface-variant">Edit, add, or delete documents anytime during your lifetime.</p>
+</div>
+</div>
+<button class="px-6 py-2.5 rounded-full bg-primary text-on-primary font-label-md hover:bg-primary-container transition-colors shrink-0" onclick="document.getElementById('keamanan').scrollIntoView({behavior: 'smooth'})">
+          View Security Protocol
+        </button>
+</div>
+</div>
+</section>
+<!-- SECTION 4: SECURITY FEATURES (World-Class Security) -->
+<section class="w-full py-24 md:py-32 bg-surface" id="keamanan">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin">
+<!-- Section Header -->
+<div class="max-w-3xl mb-16">
+<span class="text-secondary font-label-md uppercase tracking-widest block mb-space-xs">
+          Protection &amp; Trust
+        </span>
+<h2 class="font-headline-lg text-headline-lg text-primary font-semibold leading-tight">
+          World-Class Security Without Losing Warmth
+        </h2>
+<p class="mt-space-md text-on-surface-variant font-body-lg text-body-lg">
+          Combining cutting-edge cryptography with humane stewardship to guarantee your legacy remains untouched by unauthorized parties.
+        </p>
+</div>
+<!-- 5 Protection Mechanisms Bento-Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<!-- 1. Encrypted Messages & Documents -->
+<div class="bg-surface-container-low p-space-lg rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-primary text-on-primary flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-2xl">lock</span>
+</div>
+<span class="font-label-sm text-outline uppercase tracking-wider">Feature 01</span>
+<h3 class="font-title-lg text-title-lg text-primary font-semibold mt-1 mb-2">
+              Encrypted Messages &amp; Documents
+            </h3>
+<p class="text-on-surface-variant font-body-md text-body-md leading-relaxed">
+              End-to-end multi-layer encryption ensures only you and your verified heirs can read your messages. Even our system administrators cannot access your secrets.
+            </p>
+</div>
+<div class="mt-6 flex items-center gap-2 text-label-sm text-primary font-medium">
+<span class="material-symbols-outlined text-base">shield</span>
+<span>Zero-Knowledge Architecture</span>
+</div>
+</div>
+<!-- 2. Image-Based Access Key -->
+<div class="bg-surface-container-low p-space-lg rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-secondary text-on-secondary flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-2xl">image_search</span>
+</div>
+<span class="font-label-sm text-outline uppercase tracking-wider">Feature 02</span>
+<h3 class="font-title-lg text-title-lg text-primary font-semibold mt-1 mb-2">
+              Image-Based Access Key
+            </h3>
+<p class="text-on-surface-variant font-body-md text-body-md leading-relaxed">
+              Advanced steganography embeds decryption key fragments invisibly into your chosen family photos, undetectable to prying eyes.
+            </p>
+</div>
+<div class="mt-6 flex items-center gap-2 text-label-sm text-secondary font-medium">
+<span class="material-symbols-outlined text-base">visibility_off</span>
+<span>Steganographic Concealment</span>
+</div>
+</div>
+<!-- 3. USB Hardware Token -->
+<div class="bg-surface-container-low p-space-lg rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-tertiary-container text-on-tertiary flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-2xl">usb</span>
+</div>
+<span class="font-label-sm text-outline uppercase tracking-wider">Feature 03</span>
+<h3 class="font-title-lg text-title-lg text-primary font-semibold mt-1 mb-2">
+              USB Hardware Token
+            </h3>
+<p class="text-on-surface-variant font-body-md text-body-md leading-relaxed">
+              Optional physical authentication via hardware security keys provides supreme defense immune to remote cyberattacks.
+            </p>
+</div>
+<div class="mt-6 flex items-center gap-2 text-label-sm text-tertiary-container font-medium">
+<span class="material-symbols-outlined text-base">hardware</span>
+<span>Hardware Security Key (FIDO2)</span>
+</div>
+</div>
+<!-- 4. Multi-Tiered Identity Verification -->
+<div class="bg-surface-container-low p-space-lg rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between lg:col-span-1 md:col-span-1">
+<div>
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest text-primary flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-2xl">badge</span>
+</div>
+<span class="font-label-sm text-outline uppercase tracking-wider">Feature 04</span>
+<h3 class="font-title-lg text-title-lg text-primary font-semibold mt-1 mb-2">
+              Multi-Tiered Identity Verification
+            </h3>
+<p class="text-on-surface-variant font-body-md text-body-md leading-relaxed">
+              Multi-factor authentication, civil registry confirmations, and tiered consensus validation before an inheritance vault is released.
+            </p>
+</div>
+<div class="mt-6 flex items-center gap-2 text-label-sm text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-base">fingerprint</span>
+<span>Biometric &amp; Legal Guardrails</span>
+</div>
+</div>
+<!-- 5. Cryptographic Data Integrity Verification -->
+<div class="bg-surface-container-low p-space-lg rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between md:col-span-2 lg:col-span-2">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl">fact_check</span>
+</div>
+<span class="px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm">
+                Tamper-Proof Audit
+              </span>
+</div>
+<span class="font-label-sm text-outline uppercase tracking-wider">Feature 05</span>
+<h3 class="font-title-lg text-title-lg text-primary font-semibold mt-1 mb-2">
+              Cryptographic Data Integrity Verification
+            </h3>
+<p class="text-on-surface-variant font-body-md text-body-md leading-relaxed max-w-2xl">
+              Every record, letter, and attachment is sealed with immutable cryptographic hashes to detect any tampering or unauthorized alteration. The system routinely audits integrity to guarantee absolute preservation.
+            </p>
+</div>
+<!-- Visual Hash Simulation Badge -->
+<div class="mt-6 pt-4 flex flex-wrap items-center justify-between gap-4 bg-surface-container-lowest/60 p-4 rounded-xl">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">terminal</span>
+<span class="font-mono text-label-sm text-outline truncate max-w-xs sm:max-w-md">SHA256: 7d18a4c9bb...38f9e021a8</span>
+</div>
+<span class="text-label-sm font-semibold text-tertiary-container flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">check_circle</span> Integrity Guaranteed
+            </span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: CLOSING CALL TO ACTION -->
+<section class="w-full py-24 md:py-32 relative overflow-hidden bg-primary" id="mulai">
+<!-- Gradient Overlays: Terracotta warmth blending into Deep Teal -->
+<div class="absolute inset-0 bg-gradient-to-br from-secondary/80 via-primary to-primary-container mix-blend-screen opacity-70 pointer-events-none"></div>
+<div class="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-32 -left-32 w-96 h-96 rounded-full bg-primary-fixed/10 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 max-w-4xl mx-auto px-margin-mobile md:px-margin text-center flex flex-col items-center">
+<!-- Wax-Seal Iconic Header -->
+<div class="w-16 h-16 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-lg mb-space-lg">
+<span class="material-symbols-outlined text-3xl">mail</span>
+</div>
+<!-- English Headline -->
+<h2 class="font-headline-lg text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-surface-container-lowest tracking-tight leading-tight max-w-3xl">
+        What Matters Most Deserves to Be Protected.
+      </h2>
+<!-- Supporting text -->
+<p class="mt-space-lg text-surface-container-high/90 font-body-lg text-base sm:text-xl max-w-2xl leading-relaxed text-balance">
+        Start preparing your digital legacy today. Provide lasting peace of mind and certainty for those who matter most.
+      </p>
+<!-- Prominent Pill CTA Button -->
+<div class="mt-space-xl flex flex-col sm:flex-row items-center justify-center gap-space-md w-full sm:w-auto">
+<button class="w-full sm:w-auto px-10 py-5 rounded-full bg-surface-container-lowest text-primary hover:bg-surface-container-low font-title-md text-lg shadow-2xl active:scale-95 transition-all flex items-center justify-center gap-3">
+<span>Start Your Legacy</span>
+<span class="material-symbols-outlined text-xl">arrow_forward</span>
+</button>
+</div>
+<!-- Reassurance Micro-copy -->
+<div class="mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-surface-container-high/80 text-body-sm font-light">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-xs text-secondary-container">check</span>
+          Free to start
+        </span>
+<span class="opacity-40">•</span>
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-xs text-secondary-container">check</span>
+          End-to-end encrypted
+        </span>
+<span class="opacity-40">•</span>
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-xs text-secondary-container">check</span>
+          Verified heirs
+        </span>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Smooth scroll helper for navigational buttons
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+</script></main><footer class="w-full bg-surface-container-low text-on-surface-variant"><div class="max-w-7xl mx-auto px-margin py-space-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-space-xl"><div class="flex flex-col gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary">The Last Will - Digital Inheritance</span><p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">Safely preserve personal messages, vital documents, and digital wills with warmth, dignity, and archive-grade encryption.</p></div><div class="flex flex-wrap items-center gap-space-md font-label-lg text-label-lg"><a class="hover:text-primary transition-colors" data-path="tentang-kami" href="#tentang">About Us</a><a class="hover:text-primary transition-colors" data-path="keamanan" href="#keamanan">Security</a><a class="hover:text-primary transition-colors" data-path="kebijakan-privasi" href="#">Privacy Policy</a><a class="hover:text-primary transition-colors" data-path="syarat-ketentuan" href="#">Terms of Service</a></div></div><div class="max-w-7xl mx-auto px-margin py-space-lg"><p class="font-body-sm text-body-sm text-outline text-center md:text-left">Copyright © 2025 The Last Will. All rights reserved.</p></div></footer></body></html>

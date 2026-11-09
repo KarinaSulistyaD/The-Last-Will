@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&amp;family=Outfit:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"primary":"#002527","on-background":"#1c1c17","error-container":"#ffdad6","primary-fixed-dim":"#a8cdcf","on-secondary":"#ffffff","surface":"#fcf9f0","on-primary-fixed":"#002021","surface-container-low":"#f6f3ea","surface-variant":"#e5e2da","on-surface-variant":"#414848","surface-container-lowest":"#ffffff","on-primary":"#ffffff","error":"#ba1a1a","secondary-fixed":"#ffdbd1","tertiary-container":"#233c0e","on-primary-fixed-variant":"#294c4e","surface-bright":"#fcf9f0","surface-container":"#f1eee5","secondary-container":"#ff9c7f","on-secondary-fixed":"#3a0a00","inverse-on-surface":"#f4f1e8","surface-container-highest":"#e5e2da","tertiary":"#0f2600","secondary":"#954830","on-surface":"#1c1c17","on-error":"#ffffff","on-tertiary-fixed":"#0c2000","outline":"#717879","secondary-fixed-dim":"#ffb59f","on-tertiary-container":"#89a86e","background":"#fcf9f0","on-secondary-container":"#78321c","inverse-surface":"#31312b","tertiary-fixed-dim":"#b0d093","on-secondary-fixed-variant":"#77311b","inverse-primary":"#a8cdcf","surface-dim":"#dddad1","surface-tint":"#416466","on-tertiary-fixed-variant":"#344e1e","on-error-container":"#93000a","tertiary-fixed":"#ccedad","on-tertiary":"#ffffff","surface-container-high":"#ebe8df","outline-variant":"#c1c8c8","primary-container":"#163b3d","on-primary-container":"#81a5a7","primary-fixed":"#c4eaec"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xs":"0.25rem","space-sm":"0.5rem","space-lg":"1.5rem","gutter":"1.5rem","space-md":"1rem","space-xl":"2.5rem","margin-mobile":"1.25rem","margin":"3rem","gutter-mobile":"1rem"},"fontFamily":{"headline-sm":["Newsreader"],"label-sm":["Outfit"],"headline-md":["Newsreader"],"headline-lg-mobile":["Newsreader"],"display-lg-mobile":["Newsreader"],"label-md":["Outfit"],"body-lg":["Outfit"],"title-md":["Outfit"],"title-lg":["Outfit"],"body-sm":["Outfit"],"label-lg":["Outfit"],"display-lg":["Newsreader"],"headline-lg":["Newsreader"],"body-md":["Outfit"]},"fontSize":{"headline-sm":["22px",{"lineHeight":"30px","letterSpacing":"0","fontWeight":"500"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.06em","fontWeight":"600"}],"headline-md":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"500"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"400"}],"display-lg-mobile":["38px",{"lineHeight":"46px","letterSpacing":"-0.015em","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"500"}],"body-lg":["18px",{"lineHeight":"28px","letterSpacing":"0","fontWeight":"400"}],"title-md":["17px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"title-lg":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.02em","fontWeight":"600"}],"display-lg":["56px",{"lineHeight":"64px","letterSpacing":"-0.02em","fontWeight":"400"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.015em","fontWeight":"400"}],"body-md":["15px",{"lineHeight":"24px","letterSpacing":"0","fontWeight":"400"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(22,59,61,0.04)]"><div class="h-20 max-w-[1240px] mx-auto px-gutter flex items-center justify-between"><div class="flex items-center gap-space-lg"><a class="flex items-baseline gap-space-xs group" data-path="dashboard" href="#"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">The Last Will</span><span class="hidden sm:inline-block font-label-sm text-label-sm text-secondary uppercase tracking-widest">Vault</span></a><div class="hidden lg:block w-px h-6 bg-surface-container-highest"></div><nav class="hidden md:flex items-center gap-1.5 p-1 rounded-full bg-surface-container-low" data-active-classes="bg-primary text-on-primary font-medium shadow-[0_2px_8px_-2px_rgba(22,59,61,0.08)]"><a class="px-space-md py-1.5 rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-all" data-path="dashboard" href="#">Dashboard</a><a class="px-space-md py-1.5 rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-all" data-path="create-will" href="#">Create Will</a><a aria-current="page" class="px-space-md py-1.5 rounded-full transition-all bg-primary text-on-primary font-medium shadow-[0_2px_8px_-2px_rgba(22,59,61,0.08)]" data-path="access-key" href="#">Access Key</a><a class="px-space-md py-1.5 rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-all" data-path="my-wills" href="#">My Wills</a></nav></div><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center gap-space-xs px-2.5 py-1 rounded-full bg-surface-container-high"><span class="w-1.5 h-1.5 rounded-full bg-tertiary-container animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase">Active &amp; Protected</span></div><div class="relative group"><button class="flex items-center gap-space-sm pl-2 pr-1.5 py-1 rounded-full bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer" type="button"><div class="text-right hidden sm:block"><span class="block font-label-lg text-label-lg text-on-surface leading-none">Eleanor Vance</span><span class="font-label-sm text-label-sm text-on-surface-variant">Legacy Holder</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_1px_3px_rgba(22,59,61,0.12)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><span class="material-symbols-outlined text-on-surface-variant text-[18px] transition-transform group-hover:rotate-180">expand_more</span></button><div class="absolute right-0 top-full mt-2 w-56 p-1.5 rounded-xl bg-surface-container-lowest shadow-[0_12px_32px_-8px_rgba(22,59,61,0.12)] opacity-0 translate-y-1 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-200 z-50"><div class="px-3 py-2 sm:hidden border-b border-surface-container-high mb-1"><div class="font-label-lg text-label-lg text-on-surface">Eleanor Vance</div><div class="font-label-sm text-label-sm text-secondary uppercase">Active &amp; Protected</div></div><a class="flex items-center gap-space-sm px-3 py-2 rounded-lg font-body-sm text-body-sm text-on-surface hover:bg-surface-container-low transition-colors" data-path="create-will" href="#"><span class="material-symbols-outlined text-[18px] text-on-surface-variant">edit_document</span>Create Will</a><a class="flex items-center gap-space-sm px-3 py-2 rounded-lg font-body-sm text-body-sm text-on-surface hover:bg-surface-container-low transition-colors" data-path="my-wills" href="#"><span class="material-symbols-outlined text-[18px] text-on-surface-variant">inventory_2</span>Legacy Documents</a><a class="flex items-center gap-space-sm px-3 py-2 rounded-lg font-body-sm text-body-sm text-on-surface hover:bg-surface-container-low transition-colors" data-path="access-key" href="#"><span class="material-symbols-outlined text-[18px] text-on-surface-variant">key</span>Security Keys</a><div class="my-1 h-px bg-surface-container"></div><a class="flex items-center gap-space-sm px-3 py-2 rounded-lg font-body-sm text-body-sm text-secondary hover:bg-secondary-fixed/40 transition-colors" data-path="login" href="#"><span class="material-symbols-outlined text-[18px] text-secondary">logout</span>Log Out</a></div></div></div></div></header><main class="w-full pt-20 bg-background min-h-[calc(100vh-140px)]"><div class="flex flex-col w-full">
+<!-- Interactive State Sync Handler -->
+<script>
+    function setVaultState(stateIndex) {
+      const states = ['state-upload', 'state-selected', 'state-processing', 'state-success'];
+      states.forEach((id, idx) => {
+        const el = document.getElementById(id);
+        const tabBtn = document.getElementById('tab-btn-' + (idx + 1));
+        if (el) {
+          if (idx === stateIndex) {
+            el.classList.remove('hidden');
+            el.classList.add('flex');
+          } else {
+            el.classList.add('hidden');
+            el.classList.remove('flex');
+          }
+        }
+        if (tabBtn) {
+          if (idx === stateIndex) {
+            tabBtn.className = "px-space-md py-2 rounded-full font-label-md text-label-md bg-primary text-on-primary shadow-sm transition-all";
+          } else {
+            tabBtn.className = "px-space-md py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all";
+          }
+        }
+      });
+
+      // Update stepper highlight based on stage
+      const step1 = document.getElementById('step-indicator-1');
+      const step2 = document.getElementById('step-indicator-2');
+      const step3 = document.getElementById('step-indicator-3');
+
+      if (stateIndex === 0) {
+        step1.className = "flex items-center gap-space-xs font-label-md text-label-md text-primary font-semibold";
+        step2.className = "flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant opacity-60";
+        step3.className = "flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant opacity-60";
+      } else if (stateIndex === 1 || stateIndex === 2) {
+        step1.className = "flex items-center gap-space-xs font-label-md text-label-md text-tertiary-container";
+        step2.className = "flex items-center gap-space-xs font-label-md text-label-md text-primary font-semibold";
+        step3.className = "flex items-center gap-space-xs font-label-md text-on-surface-variant opacity-60";
+      } else if (stateIndex === 3) {
+        step1.className = "flex items-center gap-space-xs font-label-md text-label-md text-tertiary-container";
+        step2.className = "flex items-center gap-space-xs font-label-md text-tertiary-container";
+        step3.className = "flex items-center gap-space-xs font-label-md text-secondary font-semibold";
+      }
+    }
+  </script>
+<!-- Ambient Light Backdrop Layer -->
+<div class="max-w-[1240px] w-full mx-auto px-gutter py-space-lg flex flex-col gap-space-xl">
+<!-- Top Action / Breadcrumbs & Security Notary Pill -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<a class="inline-flex items-center gap-space-xs font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors group" href="#">
+<span class="material-symbols-outlined text-[18px] group-hover:-translate-x-1 transition-transform">arrow_back</span>
+<span>← Back to Dashboard</span>
+</a>
+<div class="inline-flex items-center gap-space-sm px-space-md py-1.5 rounded-full bg-surface-container-high shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary-container">verified</span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium tracking-wide uppercase">HIGH-GRADE ENCRYPTION • SECURE LSB STEGANOGRAPHY</span>
+</div>
+</div>
+<!-- Page Title & Editorial Header Block -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg">
+<div class="max-w-[760px] flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-space-xs mb-1">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm tracking-widest uppercase font-semibold">
+            DIGITAL STEGANOGRAPHY PROTOCOL
+          </span>
+<span class="text-on-surface-variant text-[12px]">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider">Gen-III Cryptographic Vault</span>
+</div>
+<h1 class="font-display-lg text-headline-lg sm:text-display-lg text-primary tracking-tight">
+          Generate Access Key
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+          Select a treasured heirloom photo or family portrait to serve as a carrier for an encrypted access token, safeguarding your testament from unauthorized scrutiny.
+        </p>
+</div>
+<!-- Stepper / Step Breadcrumb Indicators -->
+<div class="p-space-sm rounded-xl bg-surface-container-low shadow-sm flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-primary font-semibold" id="step-indicator-1">
+<span class="w-6 h-6 rounded-full bg-surface-container-highest flex items-center justify-center text-[11px]">01</span>
+<span>Choose Carrier Image</span>
+</div>
+<span class="text-on-surface-variant opacity-30 text-[14px]">/</span>
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant opacity-60" id="step-indicator-2">
+<span class="w-6 h-6 rounded-full bg-surface-container-highest flex items-center justify-center text-[11px]">02</span>
+<span>Embed Token</span>
+</div>
+<span class="text-on-surface-variant opacity-30 text-[14px]">/</span>
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant opacity-60" id="step-indicator-3">
+<span class="w-6 h-6 rounded-full bg-surface-container-highest flex items-center justify-center text-[11px]">03</span>
+<span>Export Vault Key</span>
+</div>
+</div>
+</div>
+<!-- State Switcher Bar (Interactive Simulation for Reviewers & Users) -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm p-2 rounded-2xl bg-surface-container-low">
+<div class="flex items-center gap-space-xs text-on-surface-variant px-space-sm">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Workflow Stage Preview:</span>
+</div>
+<div class="flex flex-wrap items-center gap-1.5">
+<button class="px-space-md py-2 rounded-full font-label-md text-label-md bg-primary text-on-primary shadow-sm transition-all cursor-pointer" id="tab-btn-1" onclick="setVaultState(0)">
+          1. Ready to Upload (Default)
+        </button>
+<button class="px-space-md py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all cursor-pointer" id="tab-btn-2" onclick="setVaultState(1)">
+          2. Carrier Image Selected
+        </button>
+<button class="px-space-md py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all cursor-pointer" id="tab-btn-3" onclick="setVaultState(2)">
+          3. Embedding Steganography
+        </button>
+<button class="px-space-md py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all cursor-pointer" id="tab-btn-4" onclick="setVaultState(3)">
+          4. Successfully Sealed (Success)
+        </button>
+</div>
+</div>
+<!-- MAIN TWO-COLUMN STAGE WORKSPACE -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- LEFT COLUMN: Workspace Displays (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- STAGE 1: DEFAULT EMPTY UPLOAD ZONE -->
+<div class="flex flex-col gap-space-md" id="state-upload">
+<div class="relative w-full rounded-2xl bg-surface-container-lowest p-space-xl shadow-md flex flex-col items-center justify-center text-center group cursor-pointer hover:bg-surface-container transition-all" onclick="setVaultState(1)">
+<!-- Ambient watermark icon in backdrop -->
+<div class="w-20 h-20 rounded-full bg-surface-container-low flex items-center justify-center mb-space-md text-primary shadow-sm group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[36px]">add_photo_alternate</span>
+</div>
+<div class="max-w-[440px] flex flex-col items-center gap-space-xs">
+<h2 class="font-headline-sm text-headline-sm text-primary">Drag or Select Heirloom Photograph</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Use a high-resolution family portrait, peaceful landscape, or historical keepsake that holds sentimental meaning for you and your heir.
+              </p>
+</div>
+<div class="mt-space-lg flex items-center gap-space-sm">
+<button class="px-space-xl py-3 rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-md hover:bg-primary-container transition-all flex items-center gap-space-xs cursor-pointer" type="button">
+<span class="material-symbols-outlined text-[20px]">upload_file</span>
+<span>Upload Image from Device</span>
+</button>
+</div>
+<!-- Technical format requirements -->
+<div class="mt-space-xl pt-space-md w-full flex flex-col sm:flex-row items-center justify-around gap-space-sm text-on-surface-variant font-label-sm text-label-sm bg-surface-container-low/60 rounded-xl p-3">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary-container">image</span>
+<span>Format: PNG &amp; BMP (Lossless)</span>
+</div>
+<div class="hidden sm:block opacity-30">•</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary-container">aspect_ratio</span>
+<span>Min: 1200 × 800 px</span>
+</div>
+<div class="hidden sm:block opacity-30">•</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary-container">memory</span>
+<span>Max: 25 MB</span>
+</div>
+</div>
+</div>
+<!-- Micro Tip Banner -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex items-start gap-space-md">
+<span class="material-symbols-outlined text-secondary text-[22px] mt-0.5">lightbulb</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-title-md text-title-md text-on-surface">Tips for Carrier Selection</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Choose images with rich natural textures (botanicals, landscapes, textiles) to ensure microscopic LSB alterations blend imperceptibly across color channels and resist optical inspection.
+              </p>
+</div>
+</div>
+</div>
+<!-- STAGE 2: CARRIER IMAGE SELECTED & READY -->
+<div class="hidden flex-col gap-space-md" id="state-selected">
+<div class="relative w-full rounded-2xl bg-surface-container-lowest overflow-hidden shadow-lg p-space-md">
+<!-- Image Frame -->
+<div class="relative w-full h-[360px] sm:h-[420px] rounded-xl overflow-hidden shadow-inner bg-surface-dim">
+<img class="w-full h-full object-cover" data-alt="A warm, nostalgic vintage 35mm film photograph of a serene countryside tea plantation in 1994, soft golden morning hour sunlight casting long shadows over lush green hills and a peaceful rustic estate, warm earthy terracotta and deep teal shadows, timeless archival memory aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyrGd178SnUCN6xpm-gMIxBnZoY8kz-zi_tei3gJk0wAaWmsciBhcQmSNzI3F3RFWEwjlwjR026vDaVMpBvSxoEU0DTG2A2ume0b4tREkeQQ-yw4EtpfNempEWQ0-d0VgjssZkSU3DDv8oQQvrvN3f6kn59hb5gfwTJ9EWIM3JLvetxG3IF7hPVRZFnLsIHilo2DE7D8eykYSByO5RQ41Q_I1ys7SIsk-kEEHHZ8qE"/>
+<!-- Atmospheric Vignette & Metadata Badges -->
+<div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-black/20"></div>
+<!-- Top floating badges -->
+<div class="absolute top-4 left-4 right-4 flex items-center justify-between">
+<span class="px-3 py-1.5 rounded-full bg-surface/90 backdrop-blur-md font-label-sm text-label-sm text-primary font-semibold shadow-sm flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-tertiary-container animate-ping"></span>
+<span>Carrier Image Ready</span>
+</span>
+<span class="px-3 py-1.5 rounded-full bg-primary/80 backdrop-blur-md text-on-primary font-label-sm text-label-sm shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>100% Pixel Integrity</span>
+</span>
+</div>
+<!-- Bottom details strip on picture -->
+<div class="absolute bottom-4 left-4 right-4 flex flex-col sm:flex-row sm:items-end justify-between gap-space-sm text-on-primary">
+<div>
+<span class="font-label-sm text-label-sm text-surface-tint uppercase tracking-wider block">Selected File Identity</span>
+<h3 class="font-headline-sm text-headline-sm text-surface-bright drop-shadow-sm">Family_Orchard_Gathering_1994.png</h3>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-3 py-1.5 rounded-full bg-surface/80 hover:bg-surface text-on-surface font-label-md text-label-md backdrop-blur-sm transition-all flex items-center gap-1 cursor-pointer" onclick="setVaultState(0)" type="button">
+<span class="material-symbols-outlined text-[16px]">autorenew</span>
+<span>Change Photo</span>
+</button>
+<button class="px-3 py-1.5 rounded-full bg-error/80 hover:bg-error text-on-error font-label-md text-label-md backdrop-blur-sm transition-all flex items-center gap-1 cursor-pointer" onclick="setVaultState(0)" type="button">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+<span>Remove</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Pixel Analysis Overview -->
+<div class="mt-space-md p-space-md rounded-xl bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[20px]">lens_blur</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Optimal Pixel Matrix</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">LSB binary capacity is primed to receive a 256-bit vault key with zero visual artifacts.</span>
+</div>
+</div>
+<button class="px-space-lg py-2.5 rounded-full bg-secondary text-on-secondary font-label-lg text-label-lg shadow-sm hover:brightness-110 transition-all flex items-center gap-space-xs shrink-0 cursor-pointer" onclick="setVaultState(2)" type="button">
+<span class="material-symbols-outlined text-[18px]">key</span>
+<span>Proceed to Embedding</span>
+</button>
+</div>
+</div>
+</div>
+<!-- STAGE 3: EMBEDDING IN PROGRESS (Steganography Calculation) -->
+<div class="hidden flex-col gap-space-md" id="state-processing">
+<div class="w-full rounded-2xl bg-surface-container-lowest p-space-xl shadow-lg flex flex-col items-center justify-center text-center">
+<!-- Graphic Micro-animation Container -->
+<div class="relative w-32 h-32 flex items-center justify-center mb-space-lg">
+<div class="absolute inset-0 rounded-full border-4 border-surface-container-highest animate-pulse"></div>
+<svg class="w-28 h-28 transform -rotate-90 animate-spin" style="animation-duration: 6s;" viewbox="0 0 100 100">
+<circle class="text-surface-container-high" cx="50" cy="50" fill="none" r="42" stroke="currentColor" stroke-width="6"></circle>
+<circle class="text-secondary" cx="50" cy="50" fill="none" r="42" stroke="currentColor" stroke-dasharray="264" stroke-dashoffset="66" stroke-linecap="round" stroke-width="6"></circle>
+</svg>
+<div class="absolute w-16 h-16 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-md">
+<span class="material-symbols-outlined text-[28px] animate-bounce">lock_clock</span>
+</div>
+</div>
+<div class="max-w-[480px] flex flex-col items-center gap-space-xs mb-space-lg">
+<span class="px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+                Least Significant Bit (LSB) Algorithm Active
+              </span>
+<h2 class="font-headline-md text-headline-md text-primary">Encoding Token into Pixels...</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                The cryptographic secret token is being asymmetrically sealed with your local vault key, then imperceptibly distributed across millions of image color coordinates.
+              </p>
+</div>
+<!-- Steganography Live Progress Bar -->
+<div class="w-full max-w-[500px] flex flex-col gap-2 mb-space-lg">
+<div class="w-full h-3 rounded-full bg-surface-container-highest overflow-hidden p-0.5">
+<div class="h-full bg-gradient-to-r from-primary via-secondary to-tertiary-container rounded-full w-3/4 animate-pulse transition-all"></div>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Modulating Red, Green, Blue (RGB) Channels</span>
+<span class="font-mono text-primary font-semibold">78% Complete</span>
+</div>
+</div>
+<!-- Terminal-like subtle readout block -->
+<div class="w-full max-w-[500px] p-space-md rounded-xl bg-surface-container-high text-left font-mono text-[12px] text-on-surface-variant flex flex-col gap-1 leading-snug">
+<div class="flex items-center gap-2 text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span>
+<span>[SHA-512] Encrypting testament token payload: OK</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span>[LSB-MAPPING] 2400x1600 pixels indexed (Capacity: 120 KB)</span>
+</div>
+<div class="flex items-center gap-2 text-secondary font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-ping"></span>
+<span>[INJECTION] Committing signature block 0x88FA...</span>
+</div>
+</div>
+<div class="mt-space-lg">
+<button class="px-space-lg py-2.5 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-primary font-label-md text-label-md transition-all cursor-pointer" onclick="setVaultState(3)" type="button">
+                Complete Simulation →
+              </button>
+</div>
+</div>
+</div>
+<!-- STAGE 4: EMBEDDING SUCCESSFUL & SEALED -->
+<div class="hidden flex-col gap-space-md" id="state-success">
+<div class="w-full rounded-2xl bg-surface-container-lowest p-space-lg shadow-xl flex flex-col gap-space-lg">
+<!-- Congratulatory Header Bar -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed shadow-sm">
+<span class="material-symbols-outlined text-[28px]">verified_user</span>
+</div>
+<div>
+<div class="inline-flex items-center gap-1.5 text-tertiary-container font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+<span class="w-2 h-2 rounded-full bg-tertiary-container"></span>
+<span>Certified &amp; Perfectly Sealed</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary">Access Key Successfully Generated &amp; Sealed</h2>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="px-3 py-1 rounded-full bg-surface-container-highest font-mono text-[11px] text-on-surface-variant">
+                  HASH: 9B7E...3A2F
+                </span>
+</div>
+</div>
+<!-- Preview of Resulting Carrier File with Notary Medallion -->
+<div class="relative w-full h-[320px] rounded-xl overflow-hidden shadow-inner bg-surface-container">
+<img class="w-full h-full object-cover filter brightness-[0.98]" data-alt="A vintage pastoral family memory photograph in a sun-drenched valley, now enriched with an invisible steganographic vault key, displaying serene peaceful tone, warm morning lighting, and high-fidelity archival preservation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDh4AEmR7SX-4LOJRiyGg8smednISQ2pmqqUkiScn9jWc3vZZPGBXqvj6vpSoDKJB78WA-0ylca3ts4SUjsilpIqG5O5sZPn6s94sQXgcY8btwPxM8bgvB9vMPorcc1rC9ycp2ncZ-P2WA88BbOHu_4HYo5pnjP6VezBO47Ycfw5IcXNljSOUPFuCxTR6DvofnlUCyqXrMDJkqTV4gLcIB7_DphT5baH569SE1FgnZ4"/>
+<!-- Steganographic Seal Badge Overlay (Wax Seal aesthetic) -->
+<div class="absolute bottom-4 right-4 p-space-md rounded-2xl bg-surface/90 backdrop-blur-md shadow-lg flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[24px]">key_visualizer</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Sealed Digital Key</span>
+<span class="font-headline-sm text-[16px] text-primary">The Last Will Token v3</span>
+<span class="font-mono text-[10px] text-on-surface-variant">Payload: 256-bit Asymmetric LSB</span>
+</div>
+</div>
+<!-- Top Protected Pill -->
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1.5 rounded-full bg-primary/85 backdrop-blur-sm text-on-primary font-label-sm text-label-sm flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[15px] text-tertiary-fixed">lock</span>
+<span>Visually Undetectable</span>
+</span>
+</div>
+</div>
+<!-- Export and Download Action Bar -->
+<div class="flex flex-col sm:flex-row items-center gap-space-md">
+<button class="w-full sm:w-auto flex-1 px-space-xl py-3.5 rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-md hover:bg-primary-container transition-all flex items-center justify-center gap-space-sm cursor-pointer" type="button">
+<span class="material-symbols-outlined text-[20px]">download</span>
+<span>Download Access Key (.PNG Original)</span>
+</button>
+<button class="w-full sm:w-auto px-space-lg py-3.5 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-lg text-label-lg transition-all flex items-center justify-center gap-space-xs cursor-pointer" type="button">
+<span class="material-symbols-outlined text-[20px]">archive</span>
+<span>Save Backup Copy to Vault</span>
+</button>
+</div>
+<!-- Crucial Warning Notice regarding Social Media Compression -->
+<div class="p-space-lg rounded-xl bg-secondary-fixed/30 flex items-start gap-space-md">
+<div class="w-9 h-9 rounded-full bg-secondary flex items-center justify-center text-on-secondary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">warning</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-title-md text-title-md text-on-secondary-fixed font-semibold">IMPORTANT: Do Not Upload to Image Compression Services!</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  This carrier image must strictly remain in its <strong>original lossless format (PNG)</strong>. Do not transmit this photograph over WhatsApp, Instagram, or social messaging services that apply destructive lossy compression, as doing so will strip microscopic pixel bit values and permanently prevent the vault from decrypting.
+                </p>
+<div class="mt-2 flex items-center gap-space-sm font-label-sm text-label-sm text-secondary font-medium">
+<span>Recommended: Store on Encrypted Flash Drive</span>
+<span>•</span>
+<span>Retain in Fireproof Physical Safe</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- EDUCATIONAL SECURITY CARD (Why Use Steganography?) -->
+<div class="p-space-lg rounded-2xl bg-surface-container-low shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm text-primary">
+<span class="material-symbols-outlined text-[24px] text-tertiary-container">security</span>
+<h2 class="font-headline-sm text-headline-sm">Why Use Image Steganography?</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Unlike explicit password files, recovery keys, or cryptographic passcodes that invite external curiosity or targeted attacks, an image backed by steganography appears as an ordinary nostalgic photograph to anyone opening it on a standard computer or smartphone.
+          </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md mt-1">
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-1">
+<span class="font-title-md text-title-md text-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">visibility_off</span>
+<span>Absolute Concealment</span>
+</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                No unauthorized party or automated crawler suspects that a family memory conceals a sovereign testament unlock credential.
+              </p>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-1">
+<span class="font-title-md text-title-md text-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-tertiary-container">family_history</span>
+<span>Enduring Heirloom Memory</span>
+</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Your designated heir receives both sentimental intimacy and the legal digital custodian key combined within one timeless artifact.
+              </p>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: METADATA, BIOMETRIC MULTI-FACTOR, & CONTROLS (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- TARGET WILL CONTEXT CARD -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Linked Document</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-medium">Status: Draft Finalized</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px] mt-0.5">description</span>
+<div class="flex flex-col">
+<h3 class="font-title-md text-title-md text-primary">Family Heritage Testament &amp; 2025 Portfolio</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Document ID: #WST-8829-JKT</span>
+</div>
+</div>
+<div class="mt-2 pt-2 border-t-0 flex flex-col gap-1.5 font-label-md text-label-md text-on-surface-variant">
+<div class="flex items-center justify-between">
+<span>Testator:</span>
+<span class="text-on-surface font-medium">Eleanor Vance</span>
+</div>
+<div class="flex items-center justify-between">
+<span>Designated Heir:</span>
+<span class="text-secondary font-semibold">Clara Vance (Daughter)</span>
+</div>
+<div class="flex items-center justify-between">
+<span>Executor:</span>
+<span class="text-on-surface">Adiwijaya &amp; Partners Notary Chamber</span>
+</div>
+</div>
+</div>
+<div class="text-[12px] text-on-surface-variant leading-relaxed">
+            This steganographic access key serves as the singular cryptographic prerequisite demanded whenever Clara Vance petitions for inheritance release and verification.
+          </div>
+</div>
+<!-- IMAGE TECHNICAL METRICS (Information Table) -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h2 class="font-title-lg text-title-lg text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-secondary">analytics</span>
+<span>Technical Carrier Parameters</span>
+</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sensor LSB v2</span>
+</div>
+<!-- Technical Table-like Metric Rows -->
+<div class="flex flex-col gap-space-xs font-body-sm text-body-sm">
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low">
+<span class="text-on-surface-variant">File Name:</span>
+<span class="font-mono text-on-surface font-medium truncate max-w-[200px]">Family_Orchard_Gathering_1994.png</span>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low">
+<span class="text-on-surface-variant">Resolution Dimensions:</span>
+<span class="font-mono text-on-surface font-medium">2400 × 1600 pixels</span>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low">
+<span class="text-on-surface-variant">File Size:</span>
+<span class="font-mono text-on-surface font-medium">4.8 MB</span>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low">
+<span class="text-on-surface-variant">Compression Format:</span>
+<span class="text-tertiary-container font-semibold">PNG 24-bit (Lossless)</span>
+</div>
+<div class="flex flex-col gap-1 p-2.5 rounded-lg bg-surface-container-low">
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Payload Capacity:</span>
+<span class="text-tertiary-container font-semibold">120 KB (Sufficient)</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden mt-1">
+<div class="w-1/12 h-full bg-tertiary-container rounded-full"></div>
+</div>
+<span class="text-[11px] text-on-surface-variant mt-0.5">Cryptographic token only consumes 2.4 KB (~2% of available carrier capacity).</span>
+</div>
+</div>
+</div>
+<!-- NEW BIOMETRIC MULTI-FACTOR VERIFICATION CARD -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-md flex flex-col gap-space-md border border-surface-container-high/80">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm uppercase font-bold tracking-wider">
+<span class="material-symbols-outlined text-[20px] text-primary">fingerprint</span>
+<span>Multi-Factor Biometric Attestation</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[11px] font-semibold tracking-wide">
+              DUAL PROTOCOL
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Tie this digital key to biological verification for both testator authorization and future heir claim release.
+          </p>
+<!-- Biometric Option 1: Fingerprint Biometric Verification -->
+<div class="p-space-md rounded-xl bg-surface-container-low border border-surface-container-highest/60 flex flex-col gap-2.5">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center text-primary mt-0.5">
+<span class="material-symbols-outlined text-[22px]">fingerprint</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-[15px] text-primary flex items-center gap-1.5">
+                    Fingerprint Biometric Verification
+                    <span class="material-symbols-outlined text-[16px] text-tertiary-container">check_circle</span>
+</span>
+<span class="font-label-sm text-[12px] text-tertiary-container font-medium">Touch ID / FIDO2 Hardware Biometrics</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest font-mono text-[11px] text-primary font-semibold">Active</span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant leading-normal pl-11">
+              Fingerprint Bound • Enrolled for Heir Release (Clara Vance &amp; Testator Eleanor Vance). Hardware Cryptographic Key FIDO2 / Touch ID Registered.
+            </p>
+</div>
+<!-- Biometric Option 2: 3D TrueDepth Face Scan Verification -->
+<div class="p-space-md rounded-xl bg-surface-container-low border border-surface-container-highest/60 flex flex-col gap-2.5">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-secondary/10 flex items-center justify-center text-secondary mt-0.5">
+<span class="material-symbols-outlined text-[22px]">face</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-[15px] text-primary flex items-center gap-1.5">
+                    3D TrueDepth Face Scan Verification
+                    <span class="material-symbols-outlined text-[16px] text-tertiary-container">check_circle</span>
+</span>
+<span class="font-label-sm text-[12px] text-secondary font-medium">Facial Geometry Hash &amp; Parity Check</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest font-mono text-[11px] text-primary font-semibold">Active</span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant leading-normal pl-11">
+              3D Face Scan Active • TrueDepth Biometric Landmark Vector Stored. Facial geometry hash is integrated into steganographic key parity check for dual physical verification upon inheritance claim.
+            </p>
+</div>
+</div>
+<!-- ENCRYPTION EMBEDDING & SEALING CONTROLS CARD -->
+<div class="p-space-lg rounded-2xl bg-surface-container-low shadow-md flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm uppercase font-bold tracking-wider">
+<span class="material-symbols-outlined text-[18px]">enhanced_encryption</span>
+<span>Vault Privacy &amp; Sealing Confirmation</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">privacy_tip</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                The secret cryptographic token is encrypted strictly locally on your browser before injection into binary image pixels. The raw token is never exposed plaintext to maintain absolute sovereign confidentiality.
+              </p>
+</div>
+</div>
+<!-- Steganography Passphrase Option (Optional Custom Salt) -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface flex items-center justify-between">
+<span>Additional Passphrase (Optional)</span>
+<span class="text-[11px] text-on-surface-variant font-normal">Layer of Extra Protection</span>
+</label>
+<div class="relative">
+<input class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-mono text-[14px] shadow-sm outline-none cursor-not-allowed opacity-80" readonly="" type="password" value="••••••••••••••••"/>
+<span class="absolute right-3 top-2.5 text-on-surface-variant material-symbols-outlined text-[20px]">lock</span>
+</div>
+<span class="text-[11px] text-on-surface-variant">Derived deterministically from your Sovereign Vault Master Key.</span>
+</div>
+<!-- PRIMARY ACTION BUTTON -->
+<div class="mt-space-sm flex flex-col gap-space-xs">
+<button class="w-full py-4 px-space-xl rounded-full bg-secondary hover:bg-on-secondary-fixed-variant text-on-secondary font-label-lg text-label-lg shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-space-sm cursor-pointer group" onclick="setVaultState(2); setTimeout(function(){ setVaultState(3); }, 3200);" type="button">
+<span class="material-symbols-outlined text-[22px] group-hover:rotate-12 transition-transform">auto_fix_high</span>
+<span>Embed Secret Token &amp; Seal Key</span>
+</button>
+<p class="text-center font-label-sm text-label-sm text-on-surface-variant mt-1">
+              Local browser execution: ~2.8s • Zero raw data transmission
+            </p>
+</div>
+</div>
+<!-- ARCHIVAL PRESERVATION NOTICE -->
+<div class="p-space-md rounded-xl bg-surface-container-high/70 flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">history_edu</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+            ISO/IEC 15408 Digital Heritage Custody Certified.
+          </span>
+</div>
+</div>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-low mt-space-xl py-space-xl"><div class="max-w-[1240px] mx-auto px-gutter flex flex-col md:flex-row items-center justify-between gap-space-md text-center md:text-left"><div class="flex flex-col gap-1"><span class="font-headline-sm text-headline-sm text-primary">The Last Will</span><p class="font-body-sm text-body-sm text-on-surface-variant">Sovereign, quiet custody for what matters beyond tomorrow.</p></div><div class="flex items-center gap-space-lg font-label-md text-label-md text-on-surface-variant"><span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-tertiary-container">verified_user</span>End-to-End Notarized</span><span>© 2024 The Last Will Vault. All rights reserved.</span></div></div></footer></body></html>

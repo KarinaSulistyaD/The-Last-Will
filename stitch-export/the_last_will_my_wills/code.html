@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&amp;family=Outfit:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"primary":"#002527","on-background":"#1c1c17","error-container":"#ffdad6","primary-fixed-dim":"#a8cdcf","on-secondary":"#ffffff","surface":"#fcf9f0","on-primary-fixed":"#002021","surface-container-low":"#f6f3ea","surface-variant":"#e5e2da","on-surface-variant":"#414848","surface-container-lowest":"#ffffff","on-primary":"#ffffff","error":"#ba1a1a","secondary-fixed":"#ffdbd1","tertiary-container":"#233c0e","on-primary-fixed-variant":"#294c4e","surface-bright":"#fcf9f0","surface-container":"#f1eee5","secondary-container":"#ff9c7f","on-secondary-fixed":"#3a0a00","inverse-on-surface":"#f4f1e8","surface-container-highest":"#e5e2da","tertiary":"#0f2600","secondary":"#954830","on-surface":"#1c1c17","on-error":"#ffffff","on-tertiary-fixed":"#0c2000","outline":"#717879","secondary-fixed-dim":"#ffb59f","on-tertiary-container":"#89a86e","background":"#fcf9f0","on-secondary-container":"#78321c","inverse-surface":"#31312b","tertiary-fixed-dim":"#b0d093","on-secondary-fixed-variant":"#77311b","inverse-primary":"#a8cdcf","surface-dim":"#dddad1","surface-tint":"#416466","on-tertiary-fixed-variant":"#344e1e","on-error-container":"#93000a","tertiary-fixed":"#ccedad","on-tertiary":"#ffffff","surface-container-high":"#ebe8df","outline-variant":"#c1c8c8","primary-container":"#163b3d","on-primary-container":"#81a5a7","primary-fixed":"#c4eaec"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xs":"0.25rem","space-sm":"0.5rem","space-lg":"1.5rem","gutter":"1.5rem","space-md":"1rem","space-xl":"2.5rem","margin-mobile":"1.25rem","margin":"3rem","gutter-mobile":"1rem"},"fontFamily":{"headline-sm":["Newsreader"],"label-sm":["Outfit"],"headline-md":["Newsreader"],"headline-lg-mobile":["Newsreader"],"display-lg-mobile":["Newsreader"],"label-md":["Outfit"],"body-lg":["Outfit"],"title-md":["Outfit"],"title-lg":["Outfit"],"body-sm":["Outfit"],"label-lg":["Outfit"],"display-lg":["Newsreader"],"headline-lg":["Newsreader"],"body-md":["Outfit"]},"fontSize":{"headline-sm":["22px",{"lineHeight":"30px","letterSpacing":"0","fontWeight":"500"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.06em","fontWeight":"600"}],"headline-md":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"500"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"400"}],"display-lg-mobile":["38px",{"lineHeight":"46px","letterSpacing":"-0.015em","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"500"}],"body-lg":["18px",{"lineHeight":"28px","letterSpacing":"0","fontWeight":"400"}],"title-md":["17px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"title-lg":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.02em","fontWeight":"600"}],"display-lg":["56px",{"lineHeight":"64px","letterSpacing":"-0.02em","fontWeight":"400"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.015em","fontWeight":"400"}],"body-md":["15px",{"lineHeight":"24px","letterSpacing":"0","fontWeight":"400"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(22,59,61,0.04)]"><div class="h-20 max-w-[1240px] mx-auto px-gutter flex items-center justify-between"><div class="flex items-center gap-space-lg"><a class="flex items-baseline gap-space-xs group" data-path="beranda" href="#"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">The Last Will</span><span class="hidden sm:inline-block font-label-sm text-label-sm text-secondary uppercase tracking-widest">VAULT</span></a><div class="hidden lg:block w-px h-6 bg-surface-container-highest"></div><nav class="hidden md:flex items-center gap-1.5 p-1 rounded-full bg-surface-container-low" data-active-classes="bg-primary text-on-primary font-medium shadow-[0_2px_8px_-2px_rgba(22,59,61,0.08)]"><a class="px-space-md py-1.5 rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-all" data-path="dashboard" href="#">Dashboard</a><a class="px-space-md py-1.5 rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-all" data-path="buat-surat-wasiat" href="#">Create Will</a><a class="px-space-md py-1.5 rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-all" data-path="access-key" href="#">Access Key</a><a aria-current="page" class="px-space-md py-1.5 rounded-full transition-all bg-primary text-on-primary font-medium shadow-[0_2px_8px_-2px_rgba(22,59,61,0.08)]" data-path="surat-wasiat-saya" href="#">My Wills</a></nav></div><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center gap-space-xs px-2.5 py-1 rounded-full bg-surface-container-high"><span class="w-1.5 h-1.5 rounded-full bg-tertiary-container animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase">ACTIVE &amp; PROTECTED</span></div><div class="relative group"><button class="flex items-center gap-space-sm pl-2 pr-1.5 py-1 rounded-full bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer" type="button"><div class="text-right hidden sm:block"><span class="block font-label-lg text-label-lg text-on-surface leading-none">Eleanor Vance</span><span class="font-label-sm text-label-sm text-on-surface-variant">Active Testator</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_1px_3px_rgba(22,59,61,0.12)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><span class="material-symbols-outlined text-on-surface-variant text-[18px] transition-transform group-hover:rotate-180">expand_more</span></button><div class="absolute right-0 top-full mt-2 w-56 p-1.5 rounded-xl bg-surface-container-lowest shadow-[0_12px_32px_-8px_rgba(22,59,61,0.12)] opacity-0 translate-y-1 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-200 z-50"><div class="px-3 py-2 sm:hidden border-b border-surface-container-high mb-1"><div class="font-label-lg text-label-lg text-on-surface">Eleanor Vance</div><div class="font-label-sm text-label-sm text-secondary uppercase">Active Testator</div></div><a class="flex items-center gap-space-sm px-3 py-2 rounded-lg font-body-sm text-body-sm text-on-surface hover:bg-surface-container-low transition-colors" data-path="surat-wasiat-saya" href="#"><span class="material-symbols-outlined text-[18px] text-on-surface-variant">inventory_2</span>Testament Documents</a><a class="flex items-center gap-space-sm px-3 py-2 rounded-lg font-body-sm text-body-sm text-on-surface hover:bg-surface-container-low transition-colors" data-path="access-key" href="#"><span class="material-symbols-outlined text-[18px] text-on-surface-variant">key</span>Vault Access Keys</a><div class="my-1 h-px bg-surface-container"></div><a class="flex items-center gap-space-sm px-3 py-2 rounded-lg font-body-sm text-body-sm text-secondary hover:bg-secondary-fixed/40 transition-colors" data-path="login" href="#"><span class="material-symbols-outlined text-[18px] text-secondary">logout</span>Sign Out</a></div></div></div></div></header><main class="w-full pt-20 bg-background min-h-[calc(100vh-140px)]"><div class="flex flex-col w-full">
+<!-- Atmospheric Ambient Background Orbs -->
+<div class="relative w-full max-w-[1240px] mx-auto px-gutter py-space-xl overflow-hidden">
+<div class="absolute -top-32 right-12 w-96 h-96 rounded-full bg-secondary-fixed/30 blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-1/2 -left-48 w-[500px] h-[500px] rounded-full bg-primary-fixed/25 blur-3xl pointer-events-none -z-10"></div>
+<!-- 1. PAGE HEADER -->
+<header class="relative flex flex-col md:flex-row md:items-end justify-between gap-space-lg mb-space-xl">
+<div class="max-w-2xl">
+<div class="inline-flex items-center gap-space-xs px-3 py-1 rounded-full bg-surface-container-high text-secondary mb-space-md shadow-sm">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">lock</span>
+<span class="font-label-sm text-label-sm tracking-widest uppercase">DIGITAL VAULT • TESTAMENT &amp; LEGACY OVERVIEW</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight font-serif">My Wills</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-2">
+          View and manage all digital wills and testaments created within your sovereign, encrypted vault.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="group inline-flex items-center gap-2 px-space-lg py-3 rounded-full bg-secondary text-on-secondary shadow-md hover:shadow-xl hover:bg-secondary/90 transition-all duration-300" id="btnCreateWill" type="button">
+<span class="material-symbols-outlined text-[20px] transition-transform duration-300 group-hover:rotate-12">edit_note</span>
+<span class="font-label-lg text-label-lg font-medium">Create New Will</span>
+</button>
+</div>
+</header>
+<!-- METRICS STRIP / ARCHIVAL STATUS -->
+<section class="grid grid-cols-1 sm:grid-cols-3 gap-space-md mb-space-xl">
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex items-center gap-space-md relative overflow-hidden group">
+<div class="w-12 h-12 rounded-full bg-tertiary-container/10 flex items-center justify-center text-tertiary-container shrink-0">
+<span class="material-symbols-outlined text-[26px]">verified</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">SEALED TESTAMENTS</span>
+<span class="font-headline-sm text-headline-sm text-primary font-serif">1 Document</span>
+<span class="font-body-sm text-body-sm text-on-tertiary-container block truncate">Steganography &amp; Key Active</span>
+</div>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex items-center gap-space-md relative overflow-hidden group">
+<div class="w-12 h-12 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[26px]">hourglass_top</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">IN PREPARATION</span>
+<span class="font-headline-sm text-headline-sm text-primary font-serif">2 Documents</span>
+<span class="font-body-sm text-body-sm text-secondary block truncate">1 Awaiting Notary, 1 Draft</span>
+</div>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex items-center gap-space-md relative overflow-hidden group">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[26px]">shield_person</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">DESIGNATED HEIRS</span>
+<span class="font-headline-sm text-headline-sm text-primary font-serif">3 Entities</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block truncate">2 Family, 1 Charitable Trust</span>
+</div>
+</div>
+</section>
+<!-- 2. FILTER & SEARCH TOOLBAR -->
+<div class="p-space-md rounded-2xl bg-surface-container-low shadow-sm mb-space-lg flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
+<!-- Search Input -->
+<div class="relative flex-1 min-w-[280px]">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span>
+<input class="w-full pl-11 pr-4 py-2.5 rounded-full bg-surface-container-lowest text-on-surface font-body-md text-body-md placeholder:text-on-surface-variant/70 focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="searchInput" placeholder="Search by will title, designated heir, or document ID..." type="text"/>
+</div>
+<!-- Controls Group -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Status Filter Tabs -->
+<div class="flex items-center p-1 rounded-full bg-surface-container">
+<button class="filter-btn px-3 py-1.5 rounded-full font-label-md text-label-md bg-primary text-on-primary shadow-sm transition-all" data-filter="all">All Statuses</button>
+<button class="filter-btn px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" data-filter="ready">Ready for Handover</button>
+<button class="filter-btn px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" data-filter="incomplete">Incomplete</button>
+<button class="filter-btn px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" data-filter="draft">Draft</button>
+</div>
+<!-- Sort Select -->
+<div class="relative inline-flex items-center">
+<select class="appearance-none pl-3.5 pr-8 py-2 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm focus:outline-none cursor-pointer" id="sortSelect">
+<option value="newest">Latest Update</option>
+<option value="oldest">Oldest Update</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 text-[18px] text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+<!-- Simulation View Toggle: List vs Empty State -->
+<div class="hidden sm:flex items-center gap-1 pl-2 border-l border-surface-container-highest">
+<button class="p-2 rounded-full bg-primary-container text-on-primary transition-all" id="viewActiveBtn" title="List View">
+<span class="material-symbols-outlined text-[18px]">format_list_bulleted</span>
+</button>
+<button class="p-2 rounded-full text-on-surface-variant hover:bg-surface-container-high transition-all" id="viewEmptyBtn" title="Grid / Empty View">
+<span class="material-symbols-outlined text-[18px]">grid_view</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Active Count Counter -->
+<div class="flex items-center justify-between px-2 mb-space-sm">
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider" id="totalCountText">
+        SHOWING 3 SECURED WILLS
+      </p>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-tertiary-container animate-ping"></span>
+        Vault Auto-Synchronized
+      </span>
+</div>
+<!-- 3. MAIN CONTENT - CLEAN LIST OF WILLS -->
+<div class="flex flex-col gap-space-md" id="willsListContainer">
+<!-- ITEM 1 -->
+<article class="will-card group relative p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all duration-300" data-status="ready">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md flex-1 min-w-0">
+<!-- Icon Pillar -->
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed/40 flex items-center justify-center text-tertiary-container shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-[26px]">history_edu</span>
+</div>
+<!-- Content Area -->
+<div class="min-w-0 flex-1">
+<div class="flex flex-wrap items-center gap-space-xs mb-1">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-tertiary-container/10 text-tertiary-container font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span>
+                  Ready for Handover
+                </span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px] text-tertiary-container">enhanced_encryption</span>
+                  Steganography Active
+                </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant/80">#WST-8829-JKT</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary font-serif group-hover:text-secondary transition-colors truncate">
+                Family Heritage Testament &amp; 2025 Investment Portfolio
+              </h2>
+<!-- Details Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-y-1 gap-x-4 mt-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant/70">face_3</span>
+<span class="truncate"><strong class="text-on-surface">Heir:</strong> Clara Vance (Daughter)</span>
+</div>
+<div class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant/70">attach_file</span>
+<span><strong class="text-on-surface">3 Documents:</strong> Deed, Trust, Photo</span>
+</div>
+<div class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant/70">update</span>
+<span>Updated: Oct 28, 2024</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-space-sm shrink-0 self-end lg:self-center pt-2 lg:pt-0">
+<button class="btn-detail px-space-md py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container shadow-sm transition-all" data-will-id="wst-1" type="button">
+              View Details
+            </button>
+<div class="relative group/menu">
+<button class="p-2 rounded-full hover:bg-surface-container text-on-surface-variant transition-colors" title="More Options" type="button">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+<div class="absolute right-0 top-full mt-1 w-44 p-1 rounded-xl bg-surface-container-lowest shadow-lg opacity-0 pointer-events-none group-hover/menu:opacity-100 group-hover/menu:pointer-events-auto transition-all z-20">
+<button class="w-full text-left px-3 py-1.5 rounded-lg font-body-sm text-body-sm text-on-surface hover:bg-surface-container-low flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">edit</span> Edit Will
+                </button>
+<button class="w-full text-left px-3 py-1.5 rounded-lg font-body-sm text-body-sm text-on-surface hover:bg-surface-container-low flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">download</span> Download Summary
+                </button>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- ITEM 2 -->
+<article class="will-card group relative p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all duration-300" data-status="incomplete">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md flex-1 min-w-0">
+<!-- Icon Pillar -->
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed/50 flex items-center justify-center text-secondary shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-[26px]">folder_special</span>
+</div>
+<!-- Content Area -->
+<div class="min-w-0 flex-1">
+<div class="flex flex-wrap items-center gap-space-xs mb-1">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-container/30 text-on-secondary-container font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Incomplete
+                </span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px] text-secondary">vpn_key_off</span>
+                  Access Key Pending
+                </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant/80">#WST-4412-BDG</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary font-serif group-hover:text-secondary transition-colors truncate">
+                Digital Archive, Personal Letters for Arthur &amp; Heirloom Assets
+              </h2>
+<!-- Details Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-y-1 gap-x-4 mt-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant/70">face_6</span>
+<span class="truncate"><strong class="text-on-surface">Heir:</strong> Arthur Vance (Son)</span>
+</div>
+<div class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant/70">attach_file</span>
+<span><strong class="text-on-surface">2 Documents:</strong> Archive, Copyright Memo</span>
+</div>
+<div class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant/70">update</span>
+<span>Updated: Nov 12, 2024</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-space-sm shrink-0 self-end lg:self-center pt-2 lg:pt-0">
+<button class="btn-detail px-space-md py-2 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-md text-label-md hover:bg-secondary-container/60 shadow-sm transition-all" data-will-id="wst-2" type="button">
+              Continue Preparation
+            </button>
+<div class="relative group/menu">
+<button class="p-2 rounded-full hover:bg-surface-container text-on-surface-variant transition-colors" title="More Options" type="button">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+<div class="absolute right-0 top-full mt-1 w-44 p-1 rounded-xl bg-surface-container-lowest shadow-lg opacity-0 pointer-events-none group-hover/menu:opacity-100 group-hover/menu:pointer-events-auto transition-all z-20">
+<button class="w-full text-left px-3 py-1.5 rounded-lg font-body-sm text-body-sm text-on-surface hover:bg-surface-container-low flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">visibility</span> View Details
+                </button>
+<button class="w-full text-left px-3 py-1.5 rounded-lg font-body-sm text-body-sm text-error hover:bg-error-container/40 flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">delete</span> Delete Draft
+                </button>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- ITEM 3 -->
+<article class="will-card group relative p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all duration-300" data-status="draft">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md flex-1 min-w-0">
+<!-- Icon Pillar -->
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-on-surface-variant shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-[26px]">draft</span>
+</div>
+<!-- Content Area -->
+<div class="min-w-0 flex-1">
+<div class="flex flex-wrap items-center gap-space-xs mb-1">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                  Initial Draft
+                </span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px] text-outline">vpn_key_off</span>
+                  Access Key Pending
+                </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant/80">#WST-0921-SBY</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary font-serif group-hover:text-secondary transition-colors truncate">
+                Horizon Wildlife Sanctuary Endowment &amp; Trust
+              </h2>
+<!-- Details Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-y-1 gap-x-4 mt-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant/70">corporate_fare</span>
+<span class="truncate"><strong class="text-on-surface">Beneficiary:</strong> Horizon Wildlife Sanctuary Foundation</span>
+</div>
+<div class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant/70">attachment</span>
+<span><strong class="text-on-surface">0 Documents:</strong> No attachments yet</span>
+</div>
+<div class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant/70">update</span>
+<span>Updated: Jan 08, 2025</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-space-sm shrink-0 self-end lg:self-center pt-2 lg:pt-0">
+<button class="btn-detail px-space-md py-2 rounded-full bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-all" data-will-id="wst-3" type="button">
+              Continue Preparation
+            </button>
+<div class="relative group/menu">
+<button class="p-2 rounded-full hover:bg-surface-container text-on-surface-variant transition-colors" title="More Options" type="button">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+<div class="absolute right-0 top-full mt-1 w-44 p-1 rounded-xl bg-surface-container-lowest shadow-lg opacity-0 pointer-events-none group-hover/menu:opacity-100 group-hover/menu:pointer-events-auto transition-all z-20">
+<button class="w-full text-left px-3 py-1.5 rounded-lg font-body-sm text-body-sm text-on-surface hover:bg-surface-container-low flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">visibility</span> View Details
+                </button>
+<button class="w-full text-left px-3 py-1.5 rounded-lg font-body-sm text-body-sm text-error hover:bg-error-container/40 flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">delete</span> Delete
+                </button>
+</div>
+</div>
+</div>
+</div>
+</article>
+</div>
+<!-- 5. ELEGANT EMPTY STATE (Hidden by default, can be toggled via button) -->
+<div class="hidden my-space-xl p-space-xl rounded-3xl bg-surface-container-lowest/80 text-center max-w-2xl mx-auto shadow-sm" id="emptyStateView">
+<div class="w-20 h-20 mx-auto rounded-full bg-surface-container-high flex items-center justify-center text-secondary mb-space-md">
+<span class="material-symbols-outlined text-[40px]">shield_with_heart</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary font-serif mb-2">No Wills Created Yet</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg mx-auto mb-space-lg leading-relaxed">
+        Take a meaningful step today to record your genuine wishes, crucial instructions, and valuable documents for your loved ones under robust sovereign encryption.
+      </p>
+<button class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-secondary text-on-secondary shadow-md hover:bg-secondary/90 transition-all" type="button">
+<span class="material-symbols-outlined text-[20px]">draw</span>
+<span class="font-label-lg text-label-lg">Create Your First Will</span>
+</button>
+</div>
+<!-- NOTARIAL SECURITY CALLOUT FOOTPRINT -->
+<section class="mt-space-xl p-space-lg rounded-2xl bg-surface-container-low shadow-sm flex flex-col md:flex-row items-center gap-space-lg">
+<div class="w-14 h-14 rounded-2xl bg-primary text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[32px]">workspace_premium</span>
+</div>
+<div class="flex-1 text-center md:text-left">
+<h4 class="font-title-md text-title-md text-primary font-serif">Tiered Decryption &amp; Confidentiality Protocol</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+          Every testament is safeguarded using military-grade encryption (AES-256). Physical and digital assets can only be decrypted when designated heirs present the carrier Access Key embedded steganographically within your chosen family heirloom.
+        </p>
+</div>
+<div class="shrink-0">
+<button class="px-space-md py-2 rounded-full bg-surface-container-highest text-on-surface font-label-md text-label-md hover:bg-surface-container transition-colors" type="button">
+          Learn Protocol
+        </button>
+</div>
+</section>
+</div>
+<!-- 4. WILL DETAIL VIEW / MODAL (SLIDE-OVER DRAWER) -->
+<div class="fixed inset-0 z-50 invisible opacity-0 transition-opacity duration-300" id="detailDrawerModal">
+<!-- Backdrop scrim -->
+<div class="absolute inset-0 bg-primary/40 backdrop-blur-sm transition-opacity" id="modalBackdrop"></div>
+<div class="absolute inset-y-0 right-0 w-full max-w-2xl bg-surface-bright shadow-2xl flex flex-col transform translate-x-full transition-transform duration-300 ease-out overflow-hidden" id="drawerPanel">
+<!-- Drawer Header -->
+<div class="p-space-lg bg-surface-container-low flex items-start justify-between gap-4">
+<div>
+<div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-tertiary-container/10 text-tertiary-container font-label-sm text-label-sm mb-1.5">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+            Status: Verified &amp; Sealed
+          </div>
+<h3 class="font-headline-md text-headline-md text-primary font-serif leading-snug" id="drawerTitle">
+            Family Heritage Testament &amp; 2025 Investment Portfolio
+          </h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5" id="drawerCode">Document ID: #WST-8829-JKT</p>
+</div>
+<button class="p-2 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-colors" id="closeDrawerBtn" title="Close" type="button">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<!-- Drawer Scrollable Body -->
+<div class="flex-1 overflow-y-auto p-space-lg space-y-space-lg">
+<!-- Timeline Metadata -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<div>
+<span class="block text-on-surface-variant/70 font-label-sm text-label-sm uppercase">Created</span>
+<span class="font-medium text-on-surface">Oct 14, 2024</span>
+</div>
+<div class="w-px h-8 bg-surface-container-highest"></div>
+<div>
+<span class="block text-on-surface-variant/70 font-label-sm text-label-sm uppercase">Last Updated</span>
+<span class="font-medium text-on-surface">Oct 28, 2024</span>
+</div>
+<div class="w-px h-8 bg-surface-container-highest"></div>
+<div>
+<span class="block text-on-surface-variant/70 font-label-sm text-label-sm uppercase">Notary Validation</span>
+<span class="font-medium text-tertiary-container flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">verified</span> Complete
+            </span>
+</div>
+</div>
+<!-- Pewaris & Ahli Waris Info -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm space-y-space-md">
+<h4 class="font-title-md text-title-md text-primary font-serif flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">family_restroom</span>
+            Designated Heirs &amp; Trustees
+          </h4>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md pt-1">
+<div class="p-space-md rounded-xl bg-surface-container-low">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase block">Designated Heir</span>
+<span class="font-title-md text-title-md text-on-surface font-medium block">Clara Vance</span>
+<span class="font-body-sm text-body-sm text-secondary">Daughter (Primary Beneficiary)</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase block">Contact &amp; Identity</span>
+<span class="font-body-sm text-body-sm text-on-surface block mt-1">ID: 3174**********29</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">lock</span> Contact AES-256 Encrypted
+              </span>
+</div>
+</div>
+</div>
+<!-- Personal Encrypted Message Capsule -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm space-y-space-sm">
+<div class="flex items-center justify-between">
+<h4 class="font-title-md text-title-md text-primary font-serif flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary-container text-[20px]">mail</span>
+              Confidential Personal Message
+            </h4>
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary-fixed/60 text-on-tertiary-fixed font-label-sm text-label-sm">
+              AES-256 Encrypted
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Available (Encrypted Message • 1,240 characters stored). This message can only be decrypted when the beneficiary enters the corresponding Access Key combination.
+          </p>
+<div class="p-3.5 rounded-xl bg-surface-container font-mono text-body-sm text-on-surface-variant/80 flex items-center justify-between">
+<span class="truncate tracking-widest">•••• •••• •••• •••• •••• •••• •••• (Locked)</span>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">lock</span>
+</div>
+</div>
+<!-- Dokumen Terlampir -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm space-y-space-md">
+<h4 class="font-title-md text-title-md text-primary font-serif flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">inventory_2</span>
+            Secured Attachment Files (3 Files)
+          </h4>
+<div class="space-y-2">
+<!-- Doc 1 -->
+<div class="p-3 rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[24px]">description</span>
+<div>
+<span class="font-body-md text-body-md font-medium text-on-surface block leading-snug">Vance_Family_Estate_Deed.pdf</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Certified Title Deed • 4.8 MB</span>
+</div>
+</div>
+<button class="p-2 rounded-full hover:bg-surface-container text-on-surface-variant transition-colors" title="Verify Digital Signature">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</button>
+</div>
+<!-- Doc 2 -->
+<div class="p-3 rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[24px]">account_balance</span>
+<div>
+<span class="font-body-md text-body-md font-medium text-on-surface block leading-snug">Investment_Portfolio_Trust_Agreement.pdf</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Portfolio Directive • 2.1 MB</span>
+</div>
+</div>
+<button class="p-2 rounded-full hover:bg-surface-container text-on-surface-variant transition-colors" title="Verify Digital Signature">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</button>
+</div>
+<!-- Doc 3 -->
+<div class="p-3 rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[24px]">image</span>
+<div>
+<span class="font-body-md text-body-md font-medium text-on-surface block leading-snug">Family_Heirloom_Portrait_1994.png</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Vault Steganography Carrier • 12.4 MB</span>
+</div>
+</div>
+<button class="p-2 rounded-full hover:bg-surface-container text-on-surface-variant transition-colors" title="View Carrier Metadata">
+<span class="material-symbols-outlined text-[18px]">key</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Access Key Status Card -->
+<div class="p-space-lg rounded-2xl bg-primary text-on-primary shadow-sm flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-full bg-on-primary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">key_visualizer</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-primary-fixed block uppercase tracking-wider">Access Key Status</span>
+<h5 class="font-title-lg text-title-lg font-serif">Active &amp; Digitally Embedded</h5>
+<p class="font-body-sm text-body-sm text-on-primary/80 mt-1">
+              Embedded secretly within the carrier image <em>Family_Heirloom_Portrait_1994.png</em>. No plain-text keys are stored on the server.
+            </p>
+</div>
+</div>
+</div>
+<!-- Drawer Footer Actions -->
+<div class="p-space-lg bg-surface-container-low flex flex-wrap items-center justify-between gap-space-sm">
+<button class="px-space-md py-2.5 rounded-full text-error hover:bg-error-container/40 font-label-md text-label-md flex items-center gap-1.5 transition-colors" id="btnDeleteWill" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span> Delete Will
+        </button>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-2.5 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md transition-colors" type="button">
+            Edit Will
+          </button>
+<button class="px-space-lg py-2.5 rounded-full bg-secondary hover:bg-secondary/90 text-on-secondary font-label-md text-label-md shadow-md transition-all" type="button">
+            Continue Preparation
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- DELETE CONFIRMATION DIALOG MODAL -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 invisible opacity-0 transition-opacity duration-200" id="deleteModal">
+<div class="absolute inset-0 bg-primary/50 backdrop-blur-sm"></div>
+<div class="relative w-full max-w-md p-space-xl rounded-3xl bg-surface-bright shadow-2xl text-center transform scale-95 transition-transform duration-200" id="deleteModalContent">
+<div class="w-16 h-16 rounded-full bg-error-container/40 text-error flex items-center justify-center mx-auto mb-space-md">
+<span class="material-symbols-outlined text-[32px]">warning</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-serif mb-2">Delete Testament Document?</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-lg leading-relaxed">
+        This action cannot be undone. Encrypted files, confidential messages, and heir designations will be permanently deleted from your secure vault.
+      </p>
+<div class="flex items-center justify-center gap-space-sm">
+<button class="px-space-md py-2.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors" id="cancelDeleteBtn" type="button">
+          Cancel
+        </button>
+<button class="px-space-md py-2.5 rounded-full bg-error text-on-error hover:bg-error/90 font-label-md text-label-md shadow-md transition-colors" id="confirmDeleteBtn" type="button">
+          Yes, Delete Permanently
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    // Elements
+    const searchInput = document.getElementById('searchInput');
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.will-card');
+    const totalCountText = document.getElementById('totalCountText');
+    const willsContainer = document.getElementById('willsListContainer');
+    const emptyState = document.getElementById('emptyStateView');
+    const viewActiveBtn = document.getElementById('viewActiveBtn');
+    const viewEmptyBtn = document.getElementById('viewEmptyBtn');
+    const sortSelect = document.getElementById('sortSelect');
+
+    // Detail Drawer
+    const detailDrawerModal = document.getElementById('detailDrawerModal');
+    const drawerPanel = document.getElementById('drawerPanel');
+    const closeDrawerBtn = document.getElementById('closeDrawerBtn');
+    const modalBackdrop = document.getElementById('modalBackdrop');
+    const detailButtons = document.querySelectorAll('.btn-detail');
+
+    // Delete Modal
+    const btnDeleteWill = document.getElementById('btnDeleteWill');
+    const deleteModal = document.getElementById('deleteModal');
+    const deleteModalContent = document.getElementById('deleteModalContent');
+    const cancelDeleteBtn = document.getElementById('cancelDeleteBtn');
+    const confirmDeleteBtn = document.getElementById('confirmDeleteBtn');
+
+    let currentFilter = 'all';
+
+    // 1. FILTERING
+    function applyFilters() {
+      const query = (searchInput.value || '').toLowerCase().trim();
+      let visibleCount = 0;
+
+      cards.forEach(card => {
+        const status = card.dataset.status;
+        const text = card.textContent.toLowerCase();
+
+        const matchesStatus = (currentFilter === 'all' || status === currentFilter);
+        const matchesQuery = !query || text.includes(query);
+
+        if (matchesStatus && matchesQuery) {
+          card.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+
+      totalCountText.textContent = `SHOWING ${visibleCount} SECURED WILLS`;
+
+      if (visibleCount === 0 && willsContainer.style.display !== 'none') {
+        emptyState.classList.remove('hidden');
+      } else if (willsContainer.style.display !== 'none') {
+        emptyState.classList.add('hidden');
+      }
+    }
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => {
+          b.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+          b.classList.add('text-on-surface-variant');
+        });
+        btn.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+        btn.classList.remove('text-on-surface-variant');
+
+        currentFilter = btn.dataset.filter;
+        applyFilters();
+      });
+    });
+
+    searchInput.addEventListener('input', applyFilters);
+
+    // 2. SORTING (Simple dom rearrange)
+    sortSelect.addEventListener('change', () => {
+      const isOldest = sortSelect.value === 'oldest';
+      const cardsArr = Array.from(cards);
+      cardsArr.reverse().forEach(card => willsContainer.appendChild(card));
+    });
+
+    // 3. SWITCH VIEW SIMULATION (List vs Empty)
+    viewActiveBtn.addEventListener('click', () => {
+      willsContainer.style.display = 'flex';
+      emptyState.classList.add('hidden');
+      viewActiveBtn.classList.add('bg-primary-container', 'text-on-primary');
+      viewEmptyBtn.classList.remove('bg-primary-container', 'text-on-primary');
+      applyFilters();
+    });
+
+    viewEmptyBtn.addEventListener('click', () => {
+      willsContainer.style.display = 'none';
+      emptyState.classList.remove('hidden');
+      viewEmptyBtn.classList.add('bg-primary-container', 'text-on-primary');
+      viewActiveBtn.classList.remove('bg-primary-container', 'text-on-primary');
+      totalCountText.textContent = 'SHOWING 0 SECURED WILLS';
+    });
+
+    // 4. DRAWER LOGIC
+    function openDrawer() {
+      detailDrawerModal.classList.remove('invisible', 'opacity-0');
+      detailDrawerModal.classList.add('opacity-100');
+      drawerPanel.classList.remove('translate-x-full');
+    }
+
+    function closeDrawer() {
+      drawerPanel.classList.add('translate-x-full');
+      detailDrawerModal.classList.remove('opacity-100');
+      detailDrawerModal.classList.add('opacity-0');
+      setTimeout(() => {
+        detailDrawerModal.classList.add('invisible');
+      }, 300);
+    }
+
+    detailButtons.forEach(btn => {
+      btn.addEventListener('click', openDrawer);
+    });
+
+    closeDrawerBtn.addEventListener('click', closeDrawer);
+    modalBackdrop.addEventListener('click', closeDrawer);
+
+    // 5. DELETE MODAL LOGIC
+    btnDeleteWill.addEventListener('click', () => {
+      deleteModal.classList.remove('invisible', 'opacity-0');
+      deleteModal.classList.add('opacity-100');
+      deleteModalContent.classList.remove('scale-95');
+      deleteModalContent.classList.add('scale-100');
+    });
+
+    function closeDeleteModal() {
+      deleteModalContent.classList.remove('scale-100');
+      deleteModalContent.classList.add('scale-95');
+      deleteModal.classList.remove('opacity-100');
+      deleteModal.classList.add('opacity-0');
+      setTimeout(() => {
+        deleteModal.classList.add('invisible');
+      }, 200);
+    }
+
+    cancelDeleteBtn.addEventListener('click', closeDeleteModal);
+
+    confirmDeleteBtn.addEventListener('click', () => {
+      closeDeleteModal();
+      closeDrawer();
+      // Remove first card as interactive sample feedback
+      if (cards[0]) {
+        cards[0].style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+        cards[0].style.opacity = '0';
+        cards[0].style.transform = 'translateY(12px)';
+        setTimeout(() => {
+          cards[0].remove();
+          applyFilters();
+        }, 400);
+      }
+    });
+
+  })();
+</script></main><footer class="w-full bg-surface-container-low mt-space-xl py-space-xl"><div class="max-w-[1240px] mx-auto px-gutter flex flex-col md:flex-row items-center justify-between gap-space-md text-center md:text-left"><div class="flex flex-col gap-1"><span class="font-headline-sm text-headline-sm text-primary">The Last Will</span><p class="font-body-sm text-body-sm text-on-surface-variant">Sovereign, quiet custody for what matters beyond tomorrow.</p></div><div class="flex items-center gap-space-lg font-label-md text-label-md text-on-surface-variant"><span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-tertiary-container">verified_user</span>End-to-End Notarized</span><span>© 2024 The Last Will Vault. All rights reserved.</span></div></div></footer></body></html>

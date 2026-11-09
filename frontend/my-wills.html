@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="web_standard" name="shell-type"/>
+  <title>My Wills — The Last Will Digital Vault</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&amp;family=Outfit:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&amp;display=swap" rel="stylesheet"/>
+  <link href="css/styles.css" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="css/tailwind-config.js"></script>
+</head>
+<body class="bg-background font-body-md text-on-surface antialiased">
+  <header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(22,59,61,0.04)]">
+    <div class="h-20 max-w-[1240px] mx-auto px-gutter flex items-center justify-between">
+      <div class="flex items-center gap-space-lg">
+        <a class="flex items-baseline gap-space-xs group" data-path="dashboard" href="dashboard.html">
+          <span class="font-headline-sm text-headline-sm text-primary tracking-tight">The Last Will</span>
+          <span class="hidden sm:inline-block font-label-sm text-label-sm text-secondary uppercase tracking-widest">VAULT</span>
+        </a>
+        <div class="hidden lg:block w-px h-6 bg-surface-container-highest"></div>
+        <nav class="hidden md:flex items-center gap-1.5 p-1 rounded-full bg-surface-container-low" data-active-classes="bg-primary text-on-primary font-medium shadow-[0_2px_8px_-2px_rgba(22,59,61,0.08)]">
+          <a class="px-space-md py-1.5 rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-all" data-path="dashboard" href="dashboard.html">Dashboard</a>
+          <a class="px-space-md py-1.5 rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-all" data-path="create-will" href="create-will.html">Create Will</a>
+          <a class="px-space-md py-1.5 rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-all" data-path="access-key" href="access-key.html">Access Key</a>
+          <a aria-current="page" class="px-space-md py-1.5 rounded-full transition-all bg-primary text-on-primary font-medium shadow-[0_2px_8px_-2px_rgba(22,59,61,0.08)]" data-path="my-wills" href="my-wills.html">My Wills</a>
+        </nav>
+      </div>
+      <div class="flex items-center gap-space-md">
+        <div class="hidden sm:flex items-center gap-space-xs px-2.5 py-1 rounded-full bg-surface-container-high">
+          <span class="w-1.5 h-1.5 rounded-full bg-tertiary-container animate-pulse"></span>
+          <span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase">ACTIVE &amp; PROTECTED</span>
+        </div>
+        <div class="relative group">
+          <button class="flex items-center gap-space-sm pl-2 pr-1.5 py-1 rounded-full bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer" type="button">
+            <div class="text-right hidden sm:block">
+              <span class="block font-label-lg text-label-lg text-on-surface leading-none" data-account-name>Eleanor Vance</span>
+              <span class="font-label-sm text-label-sm text-on-surface-variant">Active Testator</span>
+            </div>
+            <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_1px_3px_rgba(22,59,61,0.12)]">
+              <span class="material-symbols-outlined text-on-primary text-[18px]">person</span>
+            </div>
+            <span class="material-symbols-outlined text-on-surface-variant text-[18px] transition-transform group-hover:rotate-180">expand_more</span>
+          </button>
+          <div class="absolute right-0 top-full mt-2 w-56 p-1.5 rounded-xl bg-surface-container-lowest shadow-[0_12px_32px_-8px_rgba(22,59,61,0.12)] opacity-0 translate-y-1 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-200 z-50">
+            <div class="px-3 py-2 sm:hidden border-b border-surface-container-high mb-1">
+              <div class="font-label-lg text-label-lg text-on-surface" data-account-name>Eleanor Vance</div>
+              <div class="font-label-sm text-label-sm text-secondary uppercase">Active Testator</div>
+            </div>
+            <a class="flex items-center gap-space-sm px-3 py-2 rounded-lg font-body-sm text-body-sm text-on-surface hover:bg-surface-container-low transition-colors" data-path="my-wills" href="my-wills.html">
+              <span class="material-symbols-outlined text-[18px] text-on-surface-variant">inventory_2</span>Testament Documents
+            </a>
+            <a class="flex items-center gap-space-sm px-3 py-2 rounded-lg font-body-sm text-body-sm text-on-surface hover:bg-surface-container-low transition-colors" data-path="access-key" href="access-key.html">
+              <span class="material-symbols-outlined text-[18px] text-on-surface-variant">key</span>Vault Access Keys
+            </a>
+            <div class="my-1 h-px bg-surface-container"></div>
+            <a class="flex items-center gap-space-sm px-3 py-2 rounded-lg font-body-sm text-body-sm text-secondary hover:bg-secondary-fixed/40 transition-colors" data-path="login" href="sign-in.html">
+              <span class="material-symbols-outlined text-[18px] text-secondary">logout</span>Sign Out
+            </a>
+          </div>
+        </div>
+        <button aria-expanded="false" aria-label="Open Navigation Menu" class="md:hidden w-9 h-9 rounded-full bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-primary transition-colors cursor-pointer" id="tlw-mobile-menu-btn" type="button">
+          <span class="material-symbols-outlined text-[20px]" id="tlw-mobile-menu-icon">menu</span>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Navigation Menu -->
+    <div aria-hidden="true" class="tlw-mobile-menu md:hidden max-w-[1240px] mx-auto px-gutter pb-3" id="tlw-mobile-menu">
+      <nav class="p-2 rounded-2xl bg-surface-container-lowest shadow-[0_12px_32px_-8px_rgba(22,59,61,0.12)] border border-primary/10 flex flex-col gap-1">
+        <a class="px-4 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-all" data-path="dashboard" href="dashboard.html">Dashboard</a>
+        <a class="px-4 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-all" data-path="create-will" href="create-will.html">Create Will</a>
+        <a class="px-4 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-all" data-path="access-key" href="access-key.html">Access Key</a>
+        <a class="px-4 py-2.5 rounded-xl bg-primary text-on-primary font-medium font-label-lg text-label-lg" data-path="my-wills" href="my-wills.html">My Wills</a>
+        <div class="my-1 h-px bg-surface-container"></div>
+        <a class="px-4 py-2.5 rounded-xl font-label-lg text-label-lg text-secondary hover:bg-secondary-fixed/40 transition-all flex items-center justify-between" data-path="login" href="sign-in.html">
+          <span>Sign Out</span>
+          <span class="material-symbols-outlined text-[18px]">logout</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="w-full pt-20 bg-background min-h-[calc(100vh-140px)]">
+    <div class="flex flex-col w-full">
+      <!-- Atmospheric Ambient Background Orbs -->
+      <div class="relative w-full max-w-[1240px] mx-auto px-gutter py-space-xl overflow-hidden">
+        <div class="absolute -top-32 right-12 w-96 h-96 rounded-full bg-secondary-fixed/30 blur-3xl pointer-events-none -z-10"></div>
+        <div class="absolute top-1/2 -left-48 w-[500px] h-[500px] rounded-full bg-primary-fixed/25 blur-3xl pointer-events-none -z-10"></div>
+
+        <!-- 1. PAGE HEADER -->
+        <header class="relative flex flex-col md:flex-row md:items-end justify-between gap-space-lg mb-space-xl">
+          <div class="max-w-2xl">
+            <div class="inline-flex items-center gap-space-xs px-3 py-1 rounded-full bg-surface-container-high text-secondary mb-space-md shadow-sm">
+              <span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">lock</span>
+              <span class="font-label-sm text-label-sm tracking-widest uppercase">DIGITAL VAULT • TESTAMENT &amp; LEGACY OVERVIEW</span>
+            </div>
+            <h1 class="font-headline-lg text-headline-lg text-primary tracking-tight font-serif">My Wills</h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant mt-2">
+              View and manage all digital wills and testaments created within your sovereign, encrypted vault.
+            </p>
+          </div>
+          <div class="flex items-center gap-space-sm shrink-0">
+            <button class="group inline-flex items-center gap-2 px-space-lg py-3 rounded-full bg-secondary text-on-secondary shadow-md hover:shadow-xl hover:bg-secondary/90 transition-all duration-300 cursor-pointer" id="btnCreateWill" type="button">
+              <span class="material-symbols-outlined text-[20px] transition-transform duration-300 group-hover:rotate-12">edit_note</span>
+              <span class="font-label-lg text-label-lg font-medium">Create New Will</span>
+            </button>
+          </div>
+        </header>
+
+        <!-- METRICS STRIP / ARCHIVAL STATUS -->
+        <section class="grid grid-cols-1 sm:grid-cols-3 gap-space-md mb-space-xl">
+          <div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex items-center gap-space-md relative overflow-hidden group">
+            <div class="w-12 h-12 rounded-full bg-tertiary-container/10 flex items-center justify-center text-tertiary-container shrink-0">
+              <span class="material-symbols-outlined text-[26px]">verified</span>
+            </div>
+            <div class="min-w-0">
+              <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">SEALED TESTAMENTS</span>
+              <span class="font-headline-sm text-headline-sm text-primary font-serif" id="metric-sealed-count">1 Document</span>
+              <span class="font-body-sm text-body-sm text-on-tertiary-container block truncate">Steganography &amp; Key Active</span>
+            </div>
+          </div>
+          <div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex items-center gap-space-md relative overflow-hidden group">
+            <div class="w-12 h-12 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary shrink-0">
+              <span class="material-symbols-outlined text-[26px]">hourglass_top</span>
+            </div>
+            <div class="min-w-0">
+              <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">IN PREPARATION</span>
+              <span class="font-headline-sm text-headline-sm text-primary font-serif" id="metric-prep-count">2 Documents</span>
+              <span class="font-body-sm text-body-sm text-secondary block truncate" id="metric-prep-sub">1 Incomplete, 1 Draft</span>
+            </div>
+          </div>
+          <div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex items-center gap-space-md relative overflow-hidden group">
+            <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+              <span class="material-symbols-outlined text-[26px]">shield_person</span>
+            </div>
+            <div class="min-w-0">
+              <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">DESIGNATED HEIRS</span>
+              <span class="font-headline-sm text-headline-sm text-primary font-serif" id="metric-heirs-count">3 Entities</span>
+              <span class="font-body-sm text-body-sm text-on-surface-variant block truncate">2 Family, 1 Charitable Trust</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- 2. FILTER & SEARCH TOOLBAR -->
+        <div class="p-space-md rounded-2xl bg-surface-container-low shadow-sm mb-space-lg flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
+          <!-- Search Input -->
+          <div class="relative flex-1 min-w-[280px]">
+            <span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span>
+            <input class="w-full pl-11 pr-4 py-2.5 rounded-full bg-surface-container-lowest text-on-surface font-body-md text-body-md placeholder:text-on-surface-variant/70 focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="searchInput" placeholder="Search by will title, designated heir, or document ID..." type="text"/>
+          </div>
+          <!-- Controls Group -->
+          <div class="flex flex-wrap items-center gap-space-sm">
+            <!-- Status Filter Tabs -->
+            <div class="flex items-center p-1 rounded-full bg-surface-container">
+              <button class="filter-btn px-3 py-1.5 rounded-full font-label-md text-label-md bg-primary text-on-primary shadow-sm transition-all cursor-pointer" data-filter="all" type="button">All Statuses</button>
+              <button class="filter-btn px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all cursor-pointer" data-filter="ready" type="button">Ready for Handover</button>
+              <button class="filter-btn px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all cursor-pointer" data-filter="incomplete" type="button">Incomplete</button>
+              <button class="filter-btn px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all cursor-pointer" data-filter="draft" type="button">Draft</button>
+            </div>
+            <!-- Sort Select -->
+            <div class="relative inline-flex items-center">
+              <select class="appearance-none pl-3.5 pr-8 py-2 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm focus:outline-none cursor-pointer" id="sortSelect">
+                <option value="newest">Latest Update</option>
+                <option value="oldest">Oldest Update</option>
+              </select>
+              <span class="material-symbols-outlined absolute right-2.5 text-[18px] text-on-surface-variant pointer-events-none">expand_more</span>
+            </div>
+            <!-- Simulation View Toggle: List vs Empty State -->
+            <div class="hidden sm:flex items-center gap-1 pl-2 border-l border-surface-container-highest">
+              <button class="p-2 rounded-full bg-primary-container text-on-primary transition-all cursor-pointer" id="viewActiveBtn" title="List View" type="button">
+                <span class="material-symbols-outlined text-[18px]">format_list_bulleted</span>
+              </button>
+              <button class="p-2 rounded-full text-on-surface-variant hover:bg-surface-container-high transition-all cursor-pointer" id="viewEmptyBtn" title="Empty State Preview" type="button">
+                <span class="material-symbols-outlined text-[18px]">grid_view</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Active Count Counter -->
+        <div class="flex items-center justify-between px-2 mb-space-sm">
+          <p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider" id="totalCountText">
+            SHOWING 3 SECURED WILLS
+          </p>
+          <span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+            <span class="w-2 h-2 rounded-full bg-tertiary-container animate-ping"></span>
+            Vault Auto-Synchronized
+          </span>
+        </div>
+
+        <!-- 3. MAIN CONTENT - CLEAN LIST OF WILLS -->
+        <div class="flex flex-col gap-space-md" id="willsListContainer">
+          <!-- Rendered dynamically by js/my-wills.js from TLWConfig -->
+        </div>
+
+        <!-- 5. ELEGANT EMPTY STATE -->
+        <div class="hidden my-space-xl p-space-xl rounded-3xl bg-surface-container-lowest/80 text-center max-w-2xl mx-auto shadow-sm" id="emptyStateView">
+          <div class="w-20 h-20 mx-auto rounded-full bg-surface-container-high flex items-center justify-center text-secondary mb-space-md">
+            <span class="material-symbols-outlined text-[40px]">shield_with_heart</span>
+          </div>
+          <h2 class="font-headline-md text-headline-md text-primary font-serif mb-2">No Wills Found</h2>
+          <p class="font-body-md text-body-md text-on-surface-variant max-w-lg mx-auto mb-space-lg leading-relaxed">
+            Take a meaningful step today to record your genuine wishes, crucial instructions, and valuable documents for your loved ones under robust sovereign encryption.
+          </p>
+          <button class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-secondary text-on-secondary shadow-md hover:bg-secondary/90 transition-all cursor-pointer" id="btnCreateFirstWill" type="button">
+            <span class="material-symbols-outlined text-[20px]">draw</span>
+            <span class="font-label-lg text-label-lg">Create Your First Will</span>
+          </button>
+        </div>
+
+        <!-- NOTARIAL SECURITY CALLOUT FOOTPRINT -->
+        <section class="mt-space-xl p-space-lg rounded-2xl bg-surface-container-low shadow-sm flex flex-col md:flex-row items-center gap-space-lg">
+          <div class="w-14 h-14 rounded-2xl bg-primary text-on-primary flex items-center justify-center shrink-0">
+            <span class="material-symbols-outlined text-[32px]">workspace_premium</span>
+          </div>
+          <div class="flex-1 text-center md:text-left">
+            <h4 class="font-title-md text-title-md text-primary font-serif">Tiered Decryption &amp; Confidentiality Protocol</h4>
+            <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Every testament is safeguarded using military-grade encryption (AES-256). Physical and digital assets can only be decrypted when designated heirs present the carrier Access Key embedded steganographically within your chosen family heirloom.
+            </p>
+          </div>
+          <div class="shrink-0">
+            <button class="px-space-md py-2 rounded-full bg-surface-container-highest text-on-surface font-label-md text-label-md hover:bg-surface-container transition-colors cursor-pointer" id="btnLearnProtocol" type="button">
+              Learn Protocol
+            </button>
+          </div>
+        </section>
+      </div>
+
+      <!-- 4. WILL DETAIL VIEW / MODAL (SLIDE-OVER DRAWER) -->
+      <div class="fixed inset-0 z-50 invisible opacity-0 transition-opacity duration-300" id="detailDrawerModal">
+        <!-- Backdrop scrim -->
+        <div class="absolute inset-0 bg-primary/40 backdrop-blur-sm transition-opacity" id="modalBackdrop"></div>
+        <div class="absolute inset-y-0 right-0 w-full max-w-2xl bg-surface-bright shadow-2xl flex flex-col transform translate-x-full transition-transform duration-300 ease-out overflow-hidden" id="drawerPanel">
+          <!-- Drawer Header -->
+          <div class="p-space-lg bg-surface-container-low flex items-start justify-between gap-4">
+            <div>
+              <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-tertiary-container/10 text-tertiary-container font-label-sm text-label-sm mb-1.5" id="drawerStatusBadge">
+                <span class="material-symbols-outlined text-[14px]">lock</span>
+                <span>Status: Verified &amp; Sealed</span>
+              </div>
+              <h3 class="font-headline-md text-headline-md text-primary font-serif leading-snug" id="drawerTitle">
+                Family Heritage Testament &amp; 2025 Investment Portfolio
+              </h3>
+              <p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5" id="drawerCode">Document ID: #WST-8829-JKT</p>
+            </div>
+            <button class="p-2 rounded-full hover:bg-surface-container-highest text-on-surface-variant transition-colors cursor-pointer" id="closeDrawerBtn" title="Close" type="button">
+              <span class="material-symbols-outlined text-[24px]">close</span>
+            </button>
+          </div>
+
+          <!-- Drawer Scrollable Body -->
+          <div class="flex-1 overflow-y-auto p-space-lg space-y-space-lg">
+            <!-- Timeline Metadata -->
+            <div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+              <div>
+                <span class="block text-on-surface-variant/70 font-label-sm text-label-sm uppercase">Created</span>
+                <span class="font-medium text-on-surface" id="drawerCreated">Oct 14, 2024</span>
+              </div>
+              <div class="w-px h-8 bg-surface-container-highest"></div>
+              <div>
+                <span class="block text-on-surface-variant/70 font-label-sm text-label-sm uppercase">Last Updated</span>
+                <span class="font-medium text-on-surface" id="drawerUpdated">Oct 28, 2024</span>
+              </div>
+              <div class="w-px h-8 bg-surface-container-highest"></div>
+              <div>
+                <span class="block text-on-surface-variant/70 font-label-sm text-label-sm uppercase">Notary Validation</span>
+                <span class="font-medium text-tertiary-container flex items-center gap-1" id="drawerNotary">
+                  <span class="material-symbols-outlined text-[16px]">verified</span> Complete
+                </span>
+              </div>
+            </div>
+
+            <!-- Pewaris & Ahli Waris Info -->
+            <div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm space-y-space-md">
+              <h4 class="font-title-md text-title-md text-primary font-serif flex items-center gap-2">
+                <span class="material-symbols-outlined text-secondary text-[20px]">family_restroom</span>
+                Designated Heirs &amp; Trustees
+              </h4>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md pt-1">
+                <div class="p-space-md rounded-xl bg-surface-container-low">
+                  <span class="font-label-sm text-label-sm text-on-surface-variant uppercase block">Designated Heir</span>
+                  <span class="font-title-md text-title-md text-on-surface font-medium block" id="drawerHeirName">Clara Vance</span>
+                  <span class="font-body-sm text-body-sm text-secondary" id="drawerHeirRelation">Daughter (Primary Beneficiary)</span>
+                </div>
+                <div class="p-space-md rounded-xl bg-surface-container-low">
+                  <span class="font-label-sm text-label-sm text-on-surface-variant uppercase block">Contact &amp; Identity</span>
+                  <span class="font-body-sm text-body-sm text-on-surface block mt-1" id="drawerContactId">ID: 3174**********29</span>
+                  <span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1" id="drawerHeirEmail">
+                    <span class="material-symbols-outlined text-[14px]">lock</span> Contact AES-256 Encrypted
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Personal Encrypted Message Capsule -->
+            <div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm space-y-space-sm">
+              <div class="flex items-center justify-between">
+                <h4 class="font-title-md text-title-md text-primary font-serif flex items-center gap-2">
+                  <span class="material-symbols-outlined text-tertiary-container text-[20px]">mail</span>
+                  Confidential Personal Message
+                </h4>
+                <span class="px-2.5 py-0.5 rounded-full bg-tertiary-fixed/60 text-on-tertiary-fixed font-label-sm text-label-sm">
+                  AES-256 Encrypted
+                </span>
+              </div>
+              <p class="font-body-sm text-body-sm text-on-surface-variant" id="drawerMessageInfo">
+                Available (Encrypted Message • 449 characters stored). This message can only be decrypted when the beneficiary enters the corresponding Access Key combination.
+              </p>
+              <div class="p-3.5 rounded-xl bg-surface-container font-mono text-body-sm text-on-surface-variant/80 flex items-center justify-between">
+                <span class="truncate tracking-widest">•••• •••• •••• •••• •••• •••• •••• (Locked)</span>
+                <span class="material-symbols-outlined text-[18px] text-on-surface-variant">lock</span>
+              </div>
+            </div>
+
+            <!-- Dokumen Terlampir -->
+            <div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm space-y-space-md">
+              <h4 class="font-title-md text-title-md text-primary font-serif flex items-center gap-2" id="drawerDocsHeading">
+                <span class="material-symbols-outlined text-secondary text-[20px]">inventory_2</span>
+                Secured Attachment Files (3 Files)
+              </h4>
+              <div class="space-y-2" id="drawerDocsList">
+                <!-- Populated dynamically per selected will -->
+              </div>
+            </div>
+
+            <!-- Access Key Status Card -->
+            <div class="p-space-lg rounded-2xl bg-primary text-on-primary shadow-sm flex items-start gap-space-md" id="drawerAccessKeyCard">
+              <div class="w-12 h-12 rounded-full bg-on-primary/10 flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined text-[24px]">key_visualizer</span>
+              </div>
+              <div>
+                <span class="font-label-sm text-label-sm text-primary-fixed block uppercase tracking-wider">Access Key Status</span>
+                <h5 class="font-title-lg text-title-lg font-serif" id="drawerAccessKeyTitle">Active &amp; Digitally Embedded</h5>
+                <p class="font-body-sm text-body-sm text-on-primary/80 mt-1" id="drawerAccessKeyDesc">
+                  Embedded secretly within the carrier image <em>Family_Orchard_Gathering_1994.png</em>. No plain-text keys are stored on the server.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Drawer Footer Actions -->
+          <div class="p-space-lg bg-surface-container-low flex flex-wrap items-center justify-between gap-space-sm">
+            <button class="px-space-md py-2.5 rounded-full text-error hover:bg-error-container/40 font-label-md text-label-md flex items-center gap-1.5 transition-colors cursor-pointer" id="btnDeleteWill" type="button">
+              <span class="material-symbols-outlined text-[18px]">delete</span> Delete Will
+            </button>
+            <div class="flex items-center gap-space-sm">
+              <button class="px-space-md py-2.5 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md transition-colors cursor-pointer" id="btnDrawerEditWill" type="button">
+                Edit Will
+              </button>
+              <button class="px-space-lg py-2.5 rounded-full bg-secondary hover:bg-secondary/90 text-on-secondary font-label-md text-label-md shadow-md transition-all cursor-pointer" id="btnDrawerContinueWill" type="button">
+                Configure Access Key
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DELETE CONFIRMATION DIALOG MODAL -->
+      <div class="fixed inset-0 z-50 flex items-center justify-center p-4 invisible opacity-0 transition-opacity duration-200" id="deleteModal">
+        <div class="absolute inset-0 bg-primary/50 backdrop-blur-sm" id="deleteModalBackdrop"></div>
+        <div class="relative w-full max-w-md p-space-xl rounded-3xl bg-surface-bright shadow-2xl text-center transform scale-95 transition-transform duration-200" id="deleteModalContent">
+          <div class="w-16 h-16 rounded-full bg-error-container/40 text-error flex items-center justify-center mx-auto mb-space-md">
+            <span class="material-symbols-outlined text-[32px]">warning</span>
+          </div>
+          <h3 class="font-headline-sm text-headline-sm text-primary font-serif mb-2">Delete Testament Document?</h3>
+          <p class="font-body-md text-body-md text-on-surface-variant mb-space-lg leading-relaxed" id="deleteModalDesc">
+            This action cannot be undone. Encrypted files, confidential messages, and heir designations will be permanently deleted from your secure vault.
+          </p>
+          <div class="flex items-center justify-center gap-space-sm">
+            <button class="px-space-md py-2.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors cursor-pointer" id="cancelDeleteBtn" type="button">
+              Cancel
+            </button>
+            <button class="px-space-md py-2.5 rounded-full bg-error text-on-error hover:bg-error/90 font-label-md text-label-md shadow-md transition-colors cursor-pointer" id="confirmDeleteBtn" type="button">
+              Yes, Delete Permanently
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="w-full bg-surface-container-low mt-space-xl py-space-xl">
+    <div class="max-w-[1240px] mx-auto px-gutter flex flex-col md:flex-row items-center justify-between gap-space-md text-center md:text-left">
+      <div class="flex flex-col gap-1">
+        <span class="font-headline-sm text-headline-sm text-primary">The Last Will</span>
+        <p class="font-body-sm text-body-sm text-on-surface-variant">Sovereign, quiet custody for what matters beyond tomorrow.</p>
+      </div>
+      <div class="flex items-center gap-space-lg font-label-md text-label-md text-on-surface-variant">
+        <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-tertiary-container">verified_user</span>End-to-End Notarized</span>
+        <span>© 2024 The Last Will Vault. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/my-wills.js"></script>
+</body>
+</html>
