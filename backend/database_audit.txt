@@ -1,0 +1,150 @@
+
+TABEL: audit_logs
+ - audit_log_id | BIGINT | nullable: False
+ - actor_user_id | BIGINT | nullable: True
+ - will_id | BIGINT | nullable: True
+ - event_type | VARCHAR(100) | nullable: False
+ - event_data | LONGTEXT | nullable: False
+ - sequence_no | BIGINT | nullable: False
+ - previous_hash | CHAR(64) | nullable: True
+ - entry_hash | CHAR(64) | nullable: False
+ - created_at | DATETIME | nullable: False
+PRIMARY KEY: {'constrained_columns': ['audit_log_id'], 'name': None}
+FOREIGN KEYS: [{'name': 'fk_audit_actor', 'constrained_columns': ['actor_user_id'], 'referred_schema': None, 'referred_table': 'users', 'referred_columns': ['user_id'], 'options': {'onupdate': 'CASCADE', 'ondelete': 'SET NULL'}}, {'name': 'fk_audit_will', 'constrained_columns': ['will_id'], 'referred_schema': None, 'referred_table': 'wills', 'referred_columns': ['will_id'], 'options': {'onupdate': 'CASCADE', 'ondelete': 'SET NULL'}}]
+
+TABEL: death_verifications
+ - verification_id | BIGINT | nullable: False
+ - will_id | BIGINT | nullable: False
+ - heir_user_id | BIGINT | nullable: False
+ - document_storage_path | VARCHAR(500) | nullable: False
+ - document_sha256 | CHAR(64) | nullable: False
+ - status | ENUM | nullable: False
+ - admin_user_id | BIGINT | nullable: True
+ - admin_notes | TEXT | nullable: True
+ - submitted_at | DATETIME | nullable: False
+ - reviewed_at | DATETIME | nullable: True
+PRIMARY KEY: {'constrained_columns': ['verification_id'], 'name': None}
+FOREIGN KEYS: [{'name': 'fk_death_verifications_admin', 'constrained_columns': ['admin_user_id'], 'referred_schema': None, 'referred_table': 'users', 'referred_columns': ['user_id'], 'options': {'onupdate': 'CASCADE'}}, {'name': 'fk_death_verifications_heir', 'constrained_columns': ['heir_user_id'], 'referred_schema': None, 'referred_table': 'users', 'referred_columns': ['user_id'], 'options': {'onupdate': 'CASCADE'}}, {'name': 'fk_death_verifications_will', 'constrained_columns': ['will_id'], 'referred_schema': None, 'referred_table': 'wills', 'referred_columns': ['will_id'], 'options': {'onupdate': 'CASCADE'}}]
+
+TABEL: face_credentials
+ - face_credential_id | BIGINT | nullable: False
+ - user_id | BIGINT | nullable: False
+ - encrypted_template | LONGBLOB | nullable: False
+ - template_version | VARCHAR(30) | nullable: False
+ - model_name | VARCHAR(120) | nullable: False
+ - is_active | TINYINT | nullable: False
+ - consent_at | DATETIME | nullable: False
+ - created_at | DATETIME | nullable: False
+ - revoked_at | DATETIME | nullable: True
+PRIMARY KEY: {'constrained_columns': ['face_credential_id'], 'name': None}
+FOREIGN KEYS: [{'name': 'fk_face_credentials_user', 'constrained_columns': ['user_id'], 'referred_schema': None, 'referred_table': 'users', 'referred_columns': ['user_id'], 'options': {'onupdate': 'CASCADE', 'ondelete': 'CASCADE'}}]
+
+TABEL: face_verification_attempts
+ - attempt_id | BIGINT | nullable: False
+ - user_id | BIGINT | nullable: False
+ - will_id | BIGINT | nullable: True
+ - is_success | TINYINT | nullable: False
+ - failure_reason_code | VARCHAR(60) | nullable: True
+ - created_at | DATETIME | nullable: False
+PRIMARY KEY: {'constrained_columns': ['attempt_id'], 'name': None}
+FOREIGN KEYS: [{'name': 'fk_face_attempt_user', 'constrained_columns': ['user_id'], 'referred_schema': None, 'referred_table': 'users', 'referred_columns': ['user_id'], 'options': {'onupdate': 'CASCADE'}}, {'name': 'fk_face_attempt_will', 'constrained_columns': ['will_id'], 'referred_schema': None, 'referred_table': 'wills', 'referred_columns': ['will_id'], 'options': {'onupdate': 'CASCADE', 'ondelete': 'SET NULL'}}]
+
+TABEL: heirs
+ - heir_id | BIGINT | nullable: False
+ - testator_user_id | BIGINT | nullable: False
+ - heir_user_id | BIGINT | nullable: True
+ - full_name | VARCHAR(150) | nullable: False
+ - email | VARCHAR(190) | nullable: True
+ - relationship | VARCHAR(80) | nullable: True
+ - verification_status | ENUM | nullable: False
+ - created_at | DATETIME | nullable: False
+ - updated_at | DATETIME | nullable: False
+PRIMARY KEY: {'constrained_columns': ['heir_id'], 'name': None}
+FOREIGN KEYS: [{'name': 'fk_heirs_testator', 'constrained_columns': ['testator_user_id'], 'referred_schema': None, 'referred_table': 'users', 'referred_columns': ['user_id'], 'options': {'onupdate': 'CASCADE'}}, {'name': 'fk_heirs_user', 'constrained_columns': ['heir_user_id'], 'referred_schema': None, 'referred_table': 'users', 'referred_columns': ['user_id'], 'options': {'onupdate': 'CASCADE', 'ondelete': 'SET NULL'}}]
+
+TABEL: key_envelopes
+ - key_envelope_id | BIGINT | nullable: False
+ - will_id | BIGINT | nullable: False
+ - wrapped_dek | LONGBLOB | nullable: False
+ - wrapping_algorithm | VARCHAR(80) | nullable: False
+ - key_version | VARCHAR(30) | nullable: False
+ - key_reference | VARCHAR(190) | nullable: True
+ - created_at | DATETIME | nullable: False
+ - revoked_at | DATETIME | nullable: True
+PRIMARY KEY: {'constrained_columns': ['key_envelope_id'], 'name': None}
+FOREIGN KEYS: [{'name': 'fk_key_envelopes_will', 'constrained_columns': ['will_id'], 'referred_schema': None, 'referred_table': 'wills', 'referred_columns': ['will_id'], 'options': {'onupdate': 'CASCADE', 'ondelete': 'CASCADE'}}]
+
+TABEL: stego_access_keys
+ - stego_key_id | BIGINT | nullable: False
+ - will_id | BIGINT | nullable: False
+ - verifier_hash | CHAR(64) | nullable: False
+ - verifier_version | VARCHAR(30) | nullable: False
+ - payload_version | VARCHAR(30) | nullable: False
+ - carrier_format | VARCHAR(20) | nullable: False
+ - stego_image_path | VARCHAR(500) | nullable: True
+ - is_active | TINYINT | nullable: False
+ - created_at | DATETIME | nullable: False
+ - revoked_at | DATETIME | nullable: True
+PRIMARY KEY: {'constrained_columns': ['stego_key_id'], 'name': None}
+FOREIGN KEYS: [{'name': 'fk_stego_access_keys_will', 'constrained_columns': ['will_id'], 'referred_schema': None, 'referred_table': 'wills', 'referred_columns': ['will_id'], 'options': {'onupdate': 'CASCADE', 'ondelete': 'CASCADE'}}]
+
+TABEL: users
+ - user_id | BIGINT | nullable: False
+ - full_name | VARCHAR(150) | nullable: False
+ - email | VARCHAR(190) | nullable: False
+ - password_hash | VARCHAR(255) | nullable: False
+ - role | ENUM | nullable: False
+ - account_status | ENUM | nullable: False
+ - email_verified_at | DATETIME | nullable: True
+ - created_at | DATETIME | nullable: False
+ - updated_at | DATETIME | nullable: False
+PRIMARY KEY: {'constrained_columns': ['user_id'], 'name': None}
+FOREIGN KEYS: []
+
+TABEL: will_documents
+ - document_id | BIGINT | nullable: False
+ - will_id | BIGINT | nullable: False
+ - original_filename | VARCHAR(255) | nullable: False
+ - mime_type | VARCHAR(120) | nullable: False
+ - file_size_bytes | BIGINT | nullable: False
+ - storage_path | VARCHAR(500) | nullable: False
+ - ciphertext_sha256 | CHAR(64) | nullable: False
+ - algorithm | VARCHAR(80) | nullable: False
+ - algorithm_version | VARCHAR(30) | nullable: False
+ - nonce | VARBINARY(32) | nullable: False
+ - auth_tag | VARBINARY(32) | nullable: True
+ - key_envelope_id | BIGINT | nullable: True
+ - created_at | DATETIME | nullable: False
+PRIMARY KEY: {'constrained_columns': ['document_id'], 'name': None}
+FOREIGN KEYS: [{'name': 'fk_will_documents_key_envelope', 'constrained_columns': ['key_envelope_id'], 'referred_schema': None, 'referred_table': 'key_envelopes', 'referred_columns': ['key_envelope_id'], 'options': {'onupdate': 'CASCADE', 'ondelete': 'SET NULL'}}, {'name': 'fk_will_documents_will', 'constrained_columns': ['will_id'], 'referred_schema': None, 'referred_table': 'wills', 'referred_columns': ['will_id'], 'options': {'onupdate': 'CASCADE', 'ondelete': 'CASCADE'}}]
+
+TABEL: will_messages
+ - message_id | BIGINT | nullable: False
+ - will_id | BIGINT | nullable: False
+ - ciphertext | LONGBLOB | nullable: False
+ - algorithm | VARCHAR(80) | nullable: False
+ - algorithm_version | VARCHAR(30) | nullable: False
+ - nonce | VARBINARY(32) | nullable: False
+ - auth_tag | VARBINARY(32) | nullable: True
+ - classical_algorithm | VARCHAR(40) | nullable: False
+ - classical_parameters | LONGTEXT | nullable: True
+ - key_envelope_id | BIGINT | nullable: True
+ - created_at | DATETIME | nullable: False
+ - updated_at | DATETIME | nullable: False
+PRIMARY KEY: {'constrained_columns': ['message_id'], 'name': None}
+FOREIGN KEYS: [{'name': 'fk_will_messages_key_envelope', 'constrained_columns': ['key_envelope_id'], 'referred_schema': None, 'referred_table': 'key_envelopes', 'referred_columns': ['key_envelope_id'], 'options': {'onupdate': 'CASCADE', 'ondelete': 'SET NULL'}}, {'name': 'fk_will_messages_will', 'constrained_columns': ['will_id'], 'referred_schema': None, 'referred_table': 'wills', 'referred_columns': ['will_id'], 'options': {'onupdate': 'CASCADE', 'ondelete': 'CASCADE'}}]
+
+TABEL: wills
+ - will_id | BIGINT | nullable: False
+ - testator_user_id | BIGINT | nullable: False
+ - heir_id | BIGINT | nullable: False
+ - title | VARCHAR(180) | nullable: False
+ - description | TEXT | nullable: True
+ - status | ENUM | nullable: False
+ - created_at | DATETIME | nullable: False
+ - updated_at | DATETIME | nullable: False
+ - activated_at | DATETIME | nullable: True
+ - released_at | DATETIME | nullable: True
+ - revoked_at | DATETIME | nullable: True
+PRIMARY KEY: {'constrained_columns': ['will_id'], 'name': None}
+FOREIGN KEYS: [{'name': 'fk_wills_heir_belongs_to_testator', 'constrained_columns': ['testator_user_id', 'heir_id'], 'referred_schema': None, 'referred_table': 'heirs', 'referred_columns': ['testator_user_id', 'heir_id'], 'options': {'onupdate': 'CASCADE'}}]
